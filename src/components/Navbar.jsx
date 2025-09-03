@@ -3,12 +3,16 @@ import { motion } from 'framer-motion'
 import spatialLogo from '../logo/spatial.png'
 
 const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false)
+  const [isOnHomePage, setIsOnHomePage] = useState(true)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
+      const homeSection = document.querySelector('#home')
+      if (homeSection) {
+        const homeSectionBottom = homeSection.offsetTop + homeSection.offsetHeight
+        setIsOnHomePage(window.scrollY < homeSectionBottom - 100)
+      }
     }
 
     window.addEventListener('scroll', handleScroll)
@@ -38,13 +42,13 @@ const Navbar = () => {
       animate={{ y: 0 }}
       transition={{ duration: 0.8, ease: 'easeOut' }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled
+        !isOnHomePage
           ? 'backdrop-blur-xl border-b border-gray-200/50'
           : ''
       }`}
       style={{
-        // 导航栏背景色，包含磨砂玻璃效果的背景
-        backgroundColor: isScrolled ? 'rgba(238, 245, 255, 0.85)' : '#eef5ff'
+        // 导航栏背景色，在首页时完全透明，离开首页时显示背景色
+        backgroundColor: isOnHomePage ? 'transparent' : 'rgba(238, 245, 255, 0.85)'
       }}
     >
       <div className="w-full px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 2xl:px-14">

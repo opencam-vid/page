@@ -94,18 +94,18 @@ const Hero = () => {
 
   return (
     <section id="home" ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* 背景 */}
+      <div className="absolute inset-0 z-10 bg-gradient-to-br from-blue-100 via-indigo-10 to-purple-100" />
+
       {/* 背景3D场景 */}
-      <div className="absolute inset-0 z-0">
+      {/* <div className="absolute inset-0 z-0">
         <Canvas camera={{ position: [0, 0, 5] }}>
           <ambientLight intensity={0.5} />
           <pointLight position={[10, 10, 10]} />
           <AnimatedSphere />
           <OrbitControls enableZoom={false} enablePan={false} autoRotate autoRotateSpeed={0.5} />
         </Canvas>
-      </div>
-
-      {/* 背景 */}
-      <div className="absolute inset-0 z-10" style={{ backgroundColor: '#eef5ff' }} />
+      </div> */}
       
       {/* 主要内容 */}
       <div className="relative z-20 text-center px-6 py-16 w-full max-w-none mx-auto lg:max-w-7xl xl:max-w-none 2xl:max-w-none">
@@ -146,7 +146,7 @@ const Hero = () => {
           <div className="mb-2">
             Yajie Bao, <a href="https://linzhuo.xyz/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">Lin-Zhuo Chen</a>, Yanxi Zhou, Xun Cao, <a href="https://yoyo000.github.io/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">Yao Yao</a><sup>*</sup>
           </div>
-          <div className="mt-6 text-xl md:text-md lg:text-lg xl:text-xl 2xl:text-3xl leading-relaxed">
+          <div className="mt-6 text-md md:text-md lg:text-lg xl:text-xl 2xl:text-3xl leading-relaxed">
             Nanjing University
           </div>
         </motion.div>
@@ -161,7 +161,7 @@ const Hero = () => {
               whileHover={{ scale: 1.05, boxShadow: '0 20px 40px rgba(0, 113, 227, 0.3)' }}
               whileTap={{ scale: 0.95 }}
               onClick={scrollToNext}
-              className="apple-button text-xl md:text-md lg:text-lg xl:text-xl 2xl:text-3xl px-8 py-4 bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-cyan-550 hover:to-teal-550 text-gray-700"
+              className="apple-button text-md md:text-md lg:text-lg xl:text-xl 2xl:text-3xl px-8 py-4 bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-cyan-550 hover:to-teal-550 text-gray-700"
             >
               Explore Project
             </motion.button>
@@ -172,7 +172,7 @@ const Hero = () => {
                  rel="noopener noreferrer"
                  whileHover={{ scale: 1.05 }}
                  whileTap={{ scale: 0.95 }}
-                 className="inline-block text-xl md:text-md lg:text-md xl:text-xl 2xl:text-3xl px-6 py-3 text-gray-700 rounded-full font-medium transition-all duration-300 hover:shadow-lg"
+                 className="inline-block text-md md:text-md lg:text-md xl:text-xl 2xl:text-3xl px-6 py-3 text-gray-700 rounded-full font-medium transition-all duration-300 hover:shadow-lg"
                  style={{
                    backgroundColor: '#d3e8fd',
                    borderColor: '#d3e8fd',
