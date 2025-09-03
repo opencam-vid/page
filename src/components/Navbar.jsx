@@ -19,7 +19,7 @@ const Navbar = () => {
     { name: 'Home', href: '#home' },
     { name: 'Overview', href: '#about' },
     { name: 'Samples', href: '#gallery' },
-    { name: 'Features', href: '#features' },
+    { name: 'Statistics', href: '#features' },
     // { name: 'Research', href: '#research' },
     { name: 'Citation', href: '#contact' },
   ]

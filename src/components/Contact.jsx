@@ -30,7 +30,7 @@ const Contact = () => {
   }
 
   return (
-    <section id="contact" ref={ref} className="pt-10 pb-10 bg-gradient-to-b from-gray-50 to-white">
+    <section id="contact" ref={ref} className="pt-10 pb-10 bg-white">
       <div className="container mx-auto px-6">
         <motion.div
           className="text-center mb-12"
@@ -58,7 +58,7 @@ const Contact = () => {
             {/* 标题栏 */}
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center">
-                  <span className="text-gray-700 text-base font-medium">BibTeX Citation</span>
+                  <span className="text-gray-700 text-base lg:text-lg 2xl:text-xl font-medium">BibTeX</span>
                 </div>
               
               {/* 复制按钮 */}
@@ -96,7 +96,7 @@ const Contact = () => {
             
             {/* BibTeX内容 */}
              <div className="relative">
-               <pre className="text-gray-800 text-sm leading-relaxed font-mono overflow-x-auto whitespace-pre-wrap text-left">
+               <pre className="text-gray-800 text-sm lg:text-md 2xl:text-lg leading-relaxed font-mono overflow-x-auto whitespace-pre-wrap text-left">
                  <code>{bibtexCitation}</code>
                </pre>
              </div>
@@ -111,7 +111,7 @@ const Contact = () => {
              animate={inView ? { opacity: 1 } : {}}
              transition={{ duration: 0.8, delay: 0.6 }}
            >
-             <p className="text-gray-600 text-sm">
+             <p className="text-gray-600 text-sm md:text-base lg:text-lg 2xl:text-2xl">
                 Add the above BibTeX entry to your references or paste it directly into your LaTeX document
               </p>
            </motion.div>

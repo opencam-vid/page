@@ -13,7 +13,7 @@ const About = () => {
   ]
 
   return (
-    <section id="about" className="pt-20 pb-12 bg-gradient-to-b from-white to-gray-50">
+    <section id="about" className="pt-20 pb-12 bg-white">
       <div className="container mx-auto px-6">
         <motion.h2
           className="text-5xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-9xl font-bold text-center mb-12"

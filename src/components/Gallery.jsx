@@ -498,7 +498,7 @@ const Gallery = () => {
   const displayedItems = showMore ? filteredItems : filteredItems.slice(0, 9)
 
   return (
-    <section id="gallery" ref={ref} className="pt-20 pb-12 bg-gradient-to-b from-gray-50 to-white">
+    <section id="gallery" ref={ref} className="pt-20 pb-12 bg-white">
       <div className="container mx-auto px-6">
         <motion.div
           className="text-center mb-16"
@@ -511,7 +511,7 @@ const Gallery = () => {
             <span className="gradient-text">Samples</span>
           </h2>
           <p className="text-2xl 2xl:text-3xl text-gray-500 max-w-[70vw] mx-auto mb-4">
-            Click the tags to filter, or click the samples to view detailed information
+            Click the tags to filter, and click the samples to view detailed information
           </p>
         </motion.div>
 

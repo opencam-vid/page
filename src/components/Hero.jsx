@@ -135,7 +135,7 @@ const Hero = () => {
         
         <motion.div
           ref={heroRef}
-          className="text-2xl md:text-md lg:text-xl xl:text-2xl 2xl:text-4xl text-black mb-16 max-w-[75vw] mx-auto"
+          className="text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl text-black mb-16 max-w-[75vw] mx-auto"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1 }}
@@ -144,7 +144,7 @@ const Hero = () => {
             Jiahao Wang, Yufeng Yuan, Rujie Zheng, Youtian Lin, Yi Zhang
           </div>
           <div className="mb-2">
-            Yajie Bao, Lin-Zhuo Chen, Yanxi Zhou, Xun Cao, Yao Yao
+            Yajie Bao, Lin-Zhuo Chen, Yanxi Zhou, Xun Cao, Yao Yao<sup>*</sup>
           </div>
           <div className="mt-6 text-xl md:text-md lg:text-lg xl:text-xl 2xl:text-3xl leading-relaxed">
             Nanjing University
