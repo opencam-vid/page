@@ -26,7 +26,7 @@ const Footer = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            <p className="text-gray-600 text-lg font-medium italic">
+            <p className="text-gray-600 text-lg 2xl:text-xl font-medium italic">
               "Exploring the Future of 3D Vision"
             </p>
           </motion.div>
@@ -39,7 +39,7 @@ const Footer = () => {
             viewport={{ once: true }}
             className="text-center"
           >
-            <p className="text-gray-500 text-sm leading-relaxed max-w-2xl">
+            <p className="text-gray-500 text-sm 2xl:text-base leading-relaxed max-w-2xl">
               © {currentYear} NJU 3DV Lab. All research data and materials are licensed under Creative Commons Attribution 4.0 International License.
             </p>
           </motion.div>

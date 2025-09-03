@@ -39,7 +39,7 @@ const Contact = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: false, amount: 0.1 }}
         >
-          <h2 className="text-5xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-9xl font-bold text-center mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-center mb-6">
             <span className="gradient-text">Cite Our Work</span>
           </h2>
           <p className="text-2xl 2xl:text-3xl text-gray-500 max-w-[70vw] mx-auto mb-2">

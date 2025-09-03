@@ -16,7 +16,7 @@ const About = () => {
     <section id="about" className="pt-20 pb-12 bg-white">
       <div className="container mx-auto px-6">
         <motion.h2
-          className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-9xl font-bold text-center mb-12"
+          className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-center mb-12"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
@@ -33,7 +33,7 @@ const About = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
             viewport={{ once: false, amount: 0.1 }}
-            className="relative mb-16 w-[90%] max-w-4xl lg:max-w-6xl xl:max-w-7xl 2xl:max-w-none"
+            className="relative mb-16 w-[90%] max-w-[90%]"
           >
             <div className="relative w-full aspect-video overflow-hidden rounded-3xl bg-gray-100">
               {/* 加载指示器 */}
@@ -70,7 +70,7 @@ const About = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
             viewport={{ once: false, amount: 0.1 }}
-            className="w-[90%] max-w-4xl lg:max-w-6xl xl:max-w-7xl 2xl:max-w-none"
+            className="w-[90%] max-w-[90%]"
           >
             {/* 统计数据 */}
             <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mt-1 mb-10">
