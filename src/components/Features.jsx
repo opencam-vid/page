@@ -106,10 +106,10 @@ const Features = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: false, amount: 0.1 }}
         >
-          <h2 className="text-5xl md:text-6xl font-bold mb-6">
-            <span className="gradient-text">核心特性</span>
+          <h2 className="text-5xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-9xl font-bold text-center mb-6">
+            <span className="gradient-text">Statistics</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-2xl 2xl:text-3xl text-gray-500 max-w-[70vw] mx-auto mb-4">
             我们的研究项目具备多项先进特性，为科研工作提供强有力的技术支持
           </p>
         </motion.div>

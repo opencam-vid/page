@@ -111,20 +111,20 @@ const Hero = () => {
       <div className="relative z-20 text-center px-6 py-16 w-full max-w-none mx-auto lg:max-w-7xl xl:max-w-none 2xl:max-w-none">
         <motion.h1
           ref={titleRef}
-          className="flex items-center justify-center gap-4 text-5xl sm:text-5xl md:text-7xl lg:text-9xl xl:text-11xl 2xl:text-14xl font-bold mb-10 leading-tight"
+          className="flex items-center justify-center gap-4 text-5xl sm:text-5xl md:text-7xl lg:text-9xl xl:text-11xl 2xl:text-16xl font-bold mb-10 leading-tight"
           initial={{ opacity: 0 }}
         >
           <img 
             src={spatialLogo} 
             alt="SpatialVID Logo" 
-            className="w-20 h-20 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 xl:w-32 xl:h-32 2xl:w-36 2xl:h-36"
+            className="w-20 h-20 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 xl:w-32 xl:h-32 2xl:w-40 2xl:h-40"
           />
           <CharHighlight text="SpatialVID" />
         </motion.h1>
         
         <motion.p
           ref={subtitleRef}
-          className="text-2xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl text-black mb-12 max-w-[60vw] mx-auto leading-relaxed"
+          className="text-2xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-7xl text-black mb-12 max-w-[60vw] mx-auto leading-relaxed"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.7 }}
@@ -135,16 +135,19 @@ const Hero = () => {
         
         <motion.div
           ref={heroRef}
-          className="text-2xl md:text-md lg:text-xl xl:text-2xl 2xl:text-3xl text-black mb-16 max-w-[75vw] mx-auto"
+          className="text-2xl md:text-md lg:text-xl xl:text-2xl 2xl:text-4xl text-black mb-16 max-w-[75vw] mx-auto"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1 }}
         >
-          <div className="mb-3">
-            John Smith<sup>1</sup>, Emily Chen<sup>2</sup>, Michael Johnson<sup>1</sup>, Sarah Williams<sup>3</sup>
+          <div className="mb-2">
+            Jiahao Wang, Yufeng Yuan, Rujie Zheng, Youtian Lin, Yi Zhang
           </div>
-          <div className="text-lg leading-relaxed">
-            <sup>1</sup>Stanford University, <sup>2</sup>MIT Computer Science and Artificial Intelligence Laboratory, <sup>3</sup>Carnegie Mellon University
+          <div className="mb-2">
+            Yajie Bao, Lin-Zhuo Chen, Yanxi Zhou, Xun Cao, Yao Yao
+          </div>
+          <div className="mt-6 text-xl md:text-md lg:text-lg xl:text-xl 2xl:text-3xl leading-relaxed">
+            Nanjing University
           </div>
         </motion.div>
         
@@ -153,7 +156,7 @@ const Hero = () => {
           className="flex flex-col gap-8 justify-center items-center"
           initial={{ opacity: 0 }}
         >
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+          <div className="flex flex-col sm:flex-row sm:gap-4 md:gap-5 lg:gap-6 xl:gap-8 2xl:gap-12 justify-center items-center">
             <motion.button
               whileHover={{ scale: 1.05, boxShadow: '0 20px 40px rgba(0, 113, 227, 0.3)' }}
               whileTap={{ scale: 0.95 }}
@@ -189,7 +192,7 @@ const Hero = () => {
           </div>
           
           {/* 外部链接按钮 */}
-           <div className="flex flex-wrap gap-4 justify-center items-center">
+           <div className="flex flex-wrap gap-2 lg:gap-3 xl:gap-4 2xl:gap-6 justify-center items-center">
              <motion.a
                href="https://github.com/NJU-3DV/spatialVID"
                target="_blank"

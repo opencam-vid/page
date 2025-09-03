@@ -16,7 +16,7 @@ const About = () => {
     <section id="about" className="pt-20 pb-12 bg-gradient-to-b from-white to-gray-50">
       <div className="container mx-auto px-6">
         <motion.h2
-          className="text-5xl md:text-6xl font-bold text-center mb-16"
+          className="text-5xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-9xl font-bold text-center mb-12"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
@@ -84,10 +84,10 @@ const About = () => {
                   className="text-center"
                   whileHover={{ scale: 1.05 }}
                 >
-                  <div className="text-4xl md:text-4xl font-bold gradient-text mb-2">
+                  <div className="text-base md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-7xl font-bold gradient-text mb-2">
                     {stat.number}
                   </div>
-                  <div className="text-gray-400 font-medium text-sm">
+                  <div className="text-2xs md:text-xs lg:text-sm xl:text-md 2xl:text-xl text-gray-400 font-medium text-sm">
                     {stat.label}
                   </div>
                 </motion.div>
@@ -118,7 +118,7 @@ const About = () => {
               explicit geometric metadata and structured spatiotemporal captions
             </p> */}
             
-            <p className="text-lg text-gray-500 leading-relaxed mb-1">
+            <p className="text-xs md:text-sm lg:text-md xl:text-lg 2xl:text-2xl text-gray-500 leading-relaxed mb-1">
               SpatialVID encompasses diverse scenes curated from over 21,000 hours of raw video. The resulting dataset consists of 7,089 hours of annotated videos, comprising 2.7 million dynamic clips. The dataset provides rich spatial annotations, including camera poses, depth maps, and dynamic masks, as well as structured captions and labels describing camera motion, scene types, and their combinations.
             </p>
           </motion.div>

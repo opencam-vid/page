@@ -33,21 +33,21 @@ const Contact = () => {
     <section id="contact" ref={ref} className="pt-10 pb-10 bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto px-6">
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-12"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: false, amount: 0.1 }}
         >
-          <h2 className="text-5xl md:text-6xl font-bold mb-6">
+          <h2 className="text-5xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-9xl font-bold text-center mb-6">
             <span className="gradient-text">Cite Our Work</span>
           </h2>
-          <p className="text-xl text-gray-500 max-w-4xl mx-auto">
+          <p className="text-2xl 2xl:text-3xl text-gray-500 max-w-[70vw] mx-auto mb-2">
             If our research is helpful to you, please cite our paper using the following BibTeX format
           </p>
         </motion.div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-[70vw] mx-auto">
           <motion.div
              className="backdrop-blur-sm rounded-2xl p-8 border border-gray-300/50 relative"
              style={{ backgroundColor: '#d3e8fd' }}
