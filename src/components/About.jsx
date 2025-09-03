@@ -102,7 +102,7 @@ const About = () => {
               viewport={{ once: false, amount: 0.1 }}
               className="mb-12 w-full max-w-5xl lg:max-w-6xl xl:max-w-7xl 2xl:max-w-none mx-auto"
             >
-              <div className="relative w-full overflow-visible rounded-2xl bg-gradient-to-br from-gray-100 to-gray-200 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20 hover:z-10">
+              <div className="relative w-full overflow-visible rounded-2xl transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20 hover:z-10">
                 <img 
                   src="/img/overview.png" 
                   alt="Overview"
@@ -118,7 +118,7 @@ const About = () => {
               explicit geometric metadata and structured spatiotemporal captions
             </p> */}
             
-            <p className="text-xs md:text-sm lg:text-md xl:text-lg 2xl:text-2xl text-gray-500 leading-relaxed mb-1">
+            <p className="text-xs md:text-sm lg:text-md xl:text-lg 2xl:text-2xl text-gray-500 leading-relaxed mb-1 text-justify">
               SpatialVID encompasses diverse scenes curated from over 21,000 hours of raw video. The resulting dataset consists of 7,089 hours of annotated videos, comprising 2.7 million dynamic clips. The dataset provides rich spatial annotations, including camera poses, depth maps, and dynamic masks, as well as structured captions and labels describing camera motion, scene types, and their combinations.
             </p>
           </motion.div>

@@ -144,7 +144,7 @@ const Hero = () => {
             Jiahao Wang, Yufeng Yuan, Rujie Zheng, Youtian Lin, Yi Zhang
           </div>
           <div className="mb-2">
-            Yajie Bao, Lin-Zhuo Chen, Yanxi Zhou, Xun Cao, Yao Yao<sup>*</sup>
+            Yajie Bao, <a href="https://linzhuo.xyz/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">Lin-Zhuo Chen</a>, Yanxi Zhou, Xun Cao, <a href="https://yoyo000.github.io/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">Yao Yao</a><sup>*</sup>
           </div>
           <div className="mt-6 text-xl md:text-md lg:text-lg xl:text-xl 2xl:text-3xl leading-relaxed">
             Nanjing University
