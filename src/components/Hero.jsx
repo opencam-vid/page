@@ -95,10 +95,10 @@ const Hero = () => {
   return (
     <section id="home" ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* 背景 */}
-      <div className="absolute inset-0 z-10 bg-gradient-to-br from-blue-100 via-indigo-10 to-purple-100" />
+      <div className="absolute inset-0 z-10 bg-gradient-to-br from-blue-200 via-indigo-10 to-purple-200" />
 
       {/* 背景3D场景 */}
-      {/* <div className="absolute inset-0 z-0">
+      {/* <div className="absolute inset-0 z-15">
         <Canvas camera={{ position: [0, 0, 5] }}>
           <ambientLight intensity={0.5} />
           <pointLight position={[10, 10, 10]} />

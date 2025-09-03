@@ -41,13 +41,13 @@ const Navbar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.8, ease: 'easeOut' }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 backdrop-blur-xl ${
         !isOnHomePage
-          ? 'backdrop-blur-xl border-b border-gray-200/50'
+          ? 'border-b border-gray-200/50'
           : ''
       }`}
       style={{
-        // 导航栏背景色，在首页时完全透明，离开首页时显示背景色
+        // 导航栏背景色，在首页时透明但保持毛玻璃效果，离开首页时显示背景色
         backgroundColor: isOnHomePage ? 'transparent' : 'rgba(238, 245, 255, 0.85)'
       }}
     >
@@ -74,7 +74,7 @@ const Navbar = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => scrollToSection(item.href)}
-                className="text-black hover:text-gray-700 transition-colors duration-300 font-medium text-base sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl"
+                className="text-black hover:text-gray-700 transition-colors duration-300 font-medium text-sm sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl"
               >
                 {item.name}
               </motion.button>

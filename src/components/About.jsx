@@ -16,7 +16,7 @@ const About = () => {
     <section id="about" className="pt-20 pb-12 bg-white">
       <div className="container mx-auto px-6">
         <motion.h2
-          className="text-5xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-9xl font-bold text-center mb-12"
+          className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-9xl font-bold text-center mb-12"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
@@ -84,7 +84,7 @@ const About = () => {
                   className="text-center"
                   whileHover={{ scale: 1.05 }}
                 >
-                  <div className="text-base md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-7xl font-bold gradient-text mb-2">
+                  <div className="text-sm sm:text-md md:text-2xl lg:text-4xl xl:text-5xl 2xl:text-7xl font-bold gradient-text mb-2">
                     {stat.number}
                   </div>
                   <div className="text-2xs md:text-xs lg:text-sm xl:text-md 2xl:text-xl text-gray-400 font-medium text-sm">
