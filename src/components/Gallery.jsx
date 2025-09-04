@@ -74,11 +74,10 @@ const Gallery = () => {
         </div>
       ),
       image: 'https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif',
-      gifs: [
-        { src: 'https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif', title: 'Video Clip' },
-        { src: 'https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif', title: 'Depth' },
-        { src: 'https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif', title: 'Camera Pose' },
-        { src: 'https://media.giphy.com/media/l46Cy1rHbQ92uuLXa/giphy.gif', title: 'Dynamic Mask' }
+      videos: [
+        { src: '/SpatialVID/samples/-hGQfHfuyd8_151/clip.mp4', title: 'Video Clip' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4', title: 'Depth' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_5mb.mp4', title: 'Camera Pose' }
       ],
       tech: ['PyTorch', 'Transformer', 'CUDA']
     },
@@ -88,11 +87,10 @@ const Gallery = () => {
       category: 'natural',
       description: '基于深度学习的医疗影像诊断系统，准确率达到98%以上。该系统采用了先进的卷积神经网络架构，能够自动识别和分析各种医疗影像中的异常区域。通过大量的医疗数据训练，模型能够准确检测肿瘤、病变等关键信息，为医生提供可靠的辅助诊断。系统还集成了图像预处理、特征提取和结果可视化等功能模块，形成了完整的医疗影像分析流水线。在多家医院的临床试验中，该系统显著提高了诊断效率和准确性，得到了医疗专家的高度认可。',
       image: 'https://media.giphy.com/media/l46Cy1rHbQ92uuLXa/giphy.gif',
-      gifs: [
-        { src: 'https://media.giphy.com/media/l46Cy1rHbQ92uuLXa/giphy.gif', title: 'Video Clip' },
-        { src: 'https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif', title: 'Depth' },
-        { src: 'https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif', title: 'Camera Pose' },
-        { src: 'https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif', title: 'Dynamic Mask' }
+      videos: [
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4', title: 'Video Clip' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4', title: 'Depth' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_5mb.mp4', title: 'Camera Pose' }
       ],
       tech: ['CNN', 'ResNet', 'OpenCV']
     },
@@ -102,11 +100,10 @@ const Gallery = () => {
       category: 'rural',
       description: '多轮对话系统，支持上下文理解和情感分析。该系统基于大规模预训练语言模型构建，具备强大的自然语言理解和生成能力。通过深度学习技术，系统能够理解用户的意图，维护对话上下文，并生成自然流畅的回复。系统还集成了情感分析模块，能够识别用户的情感状态，提供更加个性化的服务。在客服、教育、娱乐等多个领域都有广泛应用，用户满意度超过95%。系统支持多语言交互，具备良好的扩展性和可维护性。',
       image: 'https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif',
-      gifs: [
-        { src: 'https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif', title: 'Video Clip' },
-        { src: 'https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif', title: 'Depth' },
-        { src: 'https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif', title: 'Camera Pose' },
-        { src: 'https://media.giphy.com/media/l46Cy1rHbQ92uuLXa/giphy.gif', title: 'Dynamic Mask' }
+      videos: [
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4', title: 'Video Clip' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4', title: 'Depth' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_5mb.mp4', title: 'Camera Pose' }
       ],
       tech: ['BERT', 'GPT', 'NLP']
     },
@@ -116,11 +113,10 @@ const Gallery = () => {
       category: 'interior',
       description: '实时数据流处理和可视化系统，支持大规模数据分析。该系统采用分布式架构设计，能够处理每秒数百万条数据记录，提供实时的数据分析和可视化服务。系统集成了多种数据源，包括数据库、消息队列、API接口等，通过统一的数据处理引擎进行清洗、转换和聚合。可视化界面采用现代化的设计理念，提供丰富的图表类型和交互功能，用户可以自定义仪表板和报表。系统还具备智能告警功能，能够及时发现异常情况并通知相关人员。',
       image: 'https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif',
-      gifs: [
-        { src: 'https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif', title: 'Video Clip' },
-        { src: 'https://media.giphy.com/media/l46Cy1rHbQ92uuLXa/giphy.gif', title: 'Depth' },
-        { src: 'https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif', title: 'Camera Pose' },
-        { src: 'https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif', title: 'Dynamic Mask' }
+      videos: [
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4', title: 'Video Clip' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4', title: 'Depth' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_5mb.mp4', title: 'Camera Pose' }
       ],
       tech: ['D3.js', 'React', 'WebSocket']
     },
@@ -130,11 +126,10 @@ const Gallery = () => {
       category: 'natural',
       description: '高精度实时目标检测，支持多类别物体识别。该系统基于最新的YOLO架构开发，能够在保证高精度的同时实现实时检测。系统支持80多种常见物体的识别，包括人员、车辆、动物等，检测精度达到95%以上。通过优化的网络结构和推理引擎，系统能够在普通GPU上达到60FPS的处理速度。系统还支持自定义训练，用户可以根据特定需求添加新的检测类别。在安防监控、自动驾驶、工业检测等领域都有成功应用案例。',
       image: 'https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif',
-      gifs: [
-        { src: 'https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif', title: 'Video Clip' },
-        { src: 'https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif', title: 'Depth' },
-        { src: 'https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif', title: 'Camera Pose' },
-        { src: 'https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif', title: 'Dynamic Mask' }
+      videos: [
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4', title: 'Video Clip' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4', title: 'Depth' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_5mb.mp4', title: 'Camera Pose' }
       ],
       tech: ['YOLO', 'TensorFlow', 'OpenCV']
     },
@@ -144,11 +139,10 @@ const Gallery = () => {
       category: 'rural',
       description: '大规模语言模型的分布式训练和优化过程。该项目展示了如何在多GPU集群上高效训练大规模语言模型，采用了数据并行和模型并行相结合的策略。通过优化的训练流水线和内存管理技术，显著提高了训练效率和模型质量。项目还包含了完整的实验管理和模型评估框架，能够自动跟踪训练过程中的各项指标。训练出的模型在多个NLP任务上都取得了优异的性能，特别是在文本生成和理解任务中表现突出。该训练框架已经开源，为研究社区提供了宝贵的资源。',
       image: 'https://media.giphy.com/media/3o7TKSjRrfIPjeiVyM/giphy.gif',
-      gifs: [
-        { src: 'https://media.giphy.com/media/3o7TKSjRrfIPjeiVyM/giphy.gif', title: 'Video Clip' },
-        { src: 'https://media.giphy.com/media/l46Cy1rHbQ92uuLXa/giphy.gif', title: 'Depth' },
-        { src: 'https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif', title: 'Camera Pose' },
-        { src: 'https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif', title: 'Dynamic Mask' }
+      videos: [
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4', title: 'Video Clip' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4', title: 'Depth' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_5mb.mp4', title: 'Camera Pose' }
       ],
       tech: ['Transformer', 'Distributed', 'TPU']
     },
@@ -158,11 +152,10 @@ const Gallery = () => {
       category: 'urban',
       description: '神经网络内部结构和学习过程的可视化展示。该工具能够直观地展示神经网络的架构、权重分布、激活模式等关键信息，帮助研究人员更好地理解模型的工作原理。通过交互式的可视化界面，用户可以实时观察训练过程中网络参数的变化，分析不同层的特征表示。工具还支持多种可视化技术，包括t-SNE、PCA、注意力热图等，为模型分析提供了丰富的视角。该工具在模型调试、性能优化和科研教学中都发挥了重要作用，获得了广泛的用户好评。',
       image: 'https://media.giphy.com/media/3o6Zt6KHxJTbXCnSvu/giphy.gif',
-      gifs: [
-        { src: 'https://media.giphy.com/media/3o6Zt6KHxJTbXCnSvu/giphy.gif', title: 'Video Clip' },
-        { src: 'https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif', title: 'Depth' },
-        { src: 'https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif', title: 'Camera Pose' },
-        { src: 'https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif', title: 'Dynamic Mask' }
+      videos: [
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4', title: 'Video Clip' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4', title: 'Depth' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_5mb.mp4', title: 'Camera Pose' }
       ],
       tech: ['TensorBoard', 'Matplotlib', 'Plotly']
     },
@@ -172,11 +165,10 @@ const Gallery = () => {
       category: 'interior',
       description: '模型性能和系统指标的综合分析仪表板。该仪表板集成了多维度的性能监控功能，能够实时跟踪模型的准确率、延迟、吞吐量等关键指标。通过直观的图表和报表，用户可以快速了解系统的运行状态和性能趋势。仪表板还支持自定义告警规则，当指标异常时会及时通知相关人员。系统采用微服务架构设计，具备良好的扩展性和可维护性。在多个生产环境中部署使用，有效提高了系统运维效率和服务质量。',
       image: 'https://media.giphy.com/media/l0HlPystfePnAI3G8/giphy.gif',
-      gifs: [
-        { src: 'https://media.giphy.com/media/l0HlPystfePnAI3G8/giphy.gif', title: 'Video Clip' },
-        { src: 'https://media.giphy.com/media/3o6Zt6KHxJTbXCnSvu/giphy.gif', title: 'Depth' },
-        { src: 'https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif', title: 'Camera Pose' },
-        { src: 'https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif', title: 'Dynamic Mask' }
+      videos: [
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4', title: 'Video Clip' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4', title: 'Depth' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_5mb.mp4', title: 'Camera Pose' }
       ],
       tech: ['Grafana', 'Prometheus', 'React']
     },
@@ -186,11 +178,10 @@ const Gallery = () => {
       category: 'waterfront',
       description: '基于多视角图像的3D场景重建技术。该技术采用了最新的神经辐射场(NeRF)方法，能够从稀疏的2D图像中重建出高质量的3D场景。通过深度学习技术，系统能够学习场景的几何结构和材质属性，生成逼真的新视角图像。技术在虚拟现实、增强现实、数字孪生等领域都有广泛应用前景。系统还支持实时渲染和交互操作，用户可以自由浏览重建的3D场景。该技术在多个国际会议上发表了相关论文，得到了学术界的高度认可。',
       image: 'https://media.giphy.com/media/3o7qDEq2bMbcbPRQ2c/giphy.gif',
-      gifs: [
-        { src: 'https://media.giphy.com/media/3o7qDEq2bMbcbPRQ2c/giphy.gif', title: 'Video Clip' },
-        { src: 'https://media.giphy.com/media/l0HlPystfePnAI3G8/giphy.gif', title: 'Depth' },
-        { src: 'https://media.giphy.com/media/3o6Zt6KHxJTbXCnSvu/giphy.gif', title: 'Camera Pose' },
-        { src: 'https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif', title: 'Dynamic Mask' }
+      videos: [
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4', title: 'Video Clip' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4', title: 'Depth' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_5mb.mp4', title: 'Camera Pose' }
       ],
       tech: ['NeRF', 'PyTorch', 'TensorFlow']
     },
@@ -200,11 +191,10 @@ const Gallery = () => {
       category: 'urban',
       description: '基于深度强化学习的智能决策系统，能够在复杂环境中自主学习和优化策略。该系统采用了Actor-Critic架构，结合了价值函数和策略梯度方法，在游戏AI、机器人控制、资源调度等领域都有出色表现。通过大量的环境交互和试错学习，智能体能够发现最优的行为策略，并在动态环境中持续适应和改进。',
       image: 'https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif',
-      gifs: [
-        { src: 'https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif', title: 'Video Clip' },
-        { src: 'https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif', title: 'Depth' },
-        { src: 'https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif', title: 'Camera Pose' },
-        { src: 'https://media.giphy.com/media/l46Cy1rHbQ92uuLXa/giphy.gif', title: 'Dynamic Mask' }
+      videos: [
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4', title: 'Video Clip' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4', title: 'Depth' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_5mb.mp4', title: 'Camera Pose' }
       ],
       tech: ['RL', 'PyTorch', 'OpenAI Gym']
     },
@@ -214,11 +204,10 @@ const Gallery = () => {
       category: 'rural',
       description: '高精度多语言语音识别系统，支持实时语音转文字和语音命令识别。系统采用了最新的Transformer架构和注意力机制，能够准确识别不同口音和语速的语音输入。集成了噪声抑制和回声消除技术，在嘈杂环境中也能保持良好的识别效果。广泛应用于智能助手、会议记录、语音翻译等场景。',
       image: 'https://media.giphy.com/media/3o7TKTDn976rzVgky4/giphy.gif',
-      gifs: [
-        { src: 'https://media.giphy.com/media/3o7TKTDn976rzVgky4/giphy.gif', title: 'Video Clip' },
-        { src: 'https://media.giphy.com/media/l46Cy1rHbQ92uuLXa/giphy.gif', title: 'Depth' },
-        { src: 'https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif', title: 'Camera Pose' },
-        { src: 'https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif', title: 'Dynamic Mask' }
+      videos: [
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4', title: 'Video Clip' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4', title: 'Depth' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_5mb.mp4', title: 'Camera Pose' }
       ],
       tech: ['ASR', 'Transformer', 'CUDA']
     },
@@ -228,11 +217,10 @@ const Gallery = () => {
       category: 'waterfront',
       description: '基于生成对抗网络的高质量图像生成系统，能够根据文本描述生成逼真的图像。模型采用了最新的扩散模型技术，在图像质量、多样性和可控性方面都有显著提升。支持风格迁移、图像编辑、超分辨率等多种功能，为创意设计和内容生产提供了强大的工具支持。',
       image: 'https://media.giphy.com/media/3o6ZtaO9BZHcOjmErm/giphy.gif',
-      gifs: [
-        { src: 'https://media.giphy.com/media/3o6ZtaO9BZHcOjmErm/giphy.gif', title: 'Video Clip' },
-        { src: 'https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif', title: 'Depth' },
-        { src: 'https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif', title: 'Camera Pose' },
-        { src: 'https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif', title: 'Dynamic Mask' }
+      videos: [
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4', title: 'Video Clip' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4', title: 'Depth' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_5mb.mp4', title: 'Camera Pose' }
       ],
       tech: ['GAN', 'Diffusion', 'PyTorch']
     },
@@ -242,11 +230,10 @@ const Gallery = () => {
       category: 'interior',
       description: '区块链数据分析和可视化平台，提供交易追踪、风险评估和市场分析功能。平台能够实时监控多个区块链网络的交易活动，识别异常模式和潜在风险。通过先进的图分析算法和机器学习技术，为用户提供深入的市场洞察和投资建议。界面直观友好，支持自定义报表和告警设置。',
       image: 'https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif',
-      gifs: [
-        { src: 'https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif', title: 'Video Clip' },
-        { src: 'https://media.giphy.com/media/3o6Zt6KHxJTbXCnSvu/giphy.gif', title: 'Depth' },
-        { src: 'https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif', title: 'Camera Pose' },
-        { src: 'https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif', title: 'Dynamic Mask' }
+      videos: [
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4', title: 'Video Clip' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4', title: 'Depth' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_5mb.mp4', title: 'Camera Pose' }
       ],
       tech: ['Blockchain', 'Graph', 'React']
     },
@@ -256,11 +243,10 @@ const Gallery = () => {
       category: 'natural',
       description: '自动驾驶汽车的环境感知和决策系统，集成了多传感器融合技术。系统能够实时处理摄像头、激光雷达、毫米波雷达等多种传感器数据，准确识别道路、车辆、行人、交通标志等关键信息。通过深度学习和传统计算机视觉技术的结合，实现了高精度的目标检测和轨迹预测，为安全驾驶提供可靠保障。',
       image: 'https://media.giphy.com/media/3o7qDEq2bMbcbPRQ2c/giphy.gif',
-      gifs: [
-        { src: 'https://media.giphy.com/media/3o7qDEq2bMbcbPRQ2c/giphy.gif', title: 'Video Clip' },
-        { src: 'https://media.giphy.com/media/l0HlPystfePnAI3G8/giphy.gif', title: 'Depth' },
-        { src: 'https://media.giphy.com/media/3o6Zt6KHxJTbXCnSvu/giphy.gif', title: 'Camera Pose' },
-        { src: 'https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif', title: 'Dynamic Mask' }
+      videos: [
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4', title: 'Video Clip' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4', title: 'Depth' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_5mb.mp4', title: 'Camera Pose' }
       ],
       tech: ['LiDAR', 'Computer Natural', 'ROS']
     },
@@ -270,11 +256,10 @@ const Gallery = () => {
       category: 'rural',
       description: '大规模知识图谱自动构建和推理系统，能够从非结构化文本中抽取实体、关系和事件信息。系统采用了最新的预训练语言模型和图神经网络技术，实现了高精度的信息抽取和知识融合。构建的知识图谱支持复杂查询和推理，为智能问答、推荐系统、决策支持等应用提供了丰富的知识基础。',
       image: 'https://media.giphy.com/media/3o7TKSjRrfIPjeiVyM/giphy.gif',
-      gifs: [
-        { src: 'https://media.giphy.com/media/3o7TKSjRrfIPjeiVyM/giphy.gif', title: 'Video Clip' },
-        { src: 'https://media.giphy.com/media/l46Cy1rHbQ92uuLXa/giphy.gif', title: 'Depth' },
-        { src: 'https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif', title: 'Camera Pose' },
-        { src: 'https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif', title: 'Dynamic Mask' }
+      videos: [
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4', title: 'Video Clip' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4', title: 'Depth' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_5mb.mp4', title: 'Camera Pose' }
       ],
       tech: ['Knowledge Graph', 'NER', 'GNN']
     },
@@ -284,11 +269,10 @@ const Gallery = () => {
       category: 'urban',
       description: '基于机器学习的量化交易策略开发和执行平台。系统集成了多种技术指标分析、基本面分析和情感分析功能，能够自动发现市场机会并执行交易策略。采用了深度学习、强化学习等先进算法，在风险控制的前提下追求稳定收益。平台支持多市场、多品种的交易，具备完善的回测和风控功能。',
       image: 'https://media.giphy.com/media/3o6Zt6KHxJTbXCnSvu/giphy.gif',
-      gifs: [
-        { src: 'https://media.giphy.com/media/3o6Zt6KHxJTbXCnSvu/giphy.gif', title: 'Video Clip' },
-        { src: 'https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif', title: 'Depth' },
-        { src: 'https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif', title: 'Camera Pose' },
-        { src: 'https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif', title: 'Dynamic Mask' }
+      videos: [
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4', title: 'Video Clip' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4', title: 'Depth' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_5mb.mp4', title: 'Camera Pose' }
       ],
       tech: ['Quant', 'ML', 'Risk Management']
     },
@@ -298,11 +282,10 @@ const Gallery = () => {
       category: 'interior',
       description: '个性化推荐系统，基于用户行为和内容特征提供精准推荐。系统采用了协同过滤、深度学习、图神经网络等多种推荐算法，能够处理冷启动问题并提供多样化的推荐结果。支持实时推荐和批量推荐，具备A/B测试和效果评估功能。广泛应用于电商、内容平台、社交网络等场景，显著提升了用户体验和业务指标。',
       image: 'https://media.giphy.com/media/l0HlPystfePnAI3G8/giphy.gif',
-      gifs: [
-        { src: 'https://media.giphy.com/media/l0HlPystfePnAI3G8/giphy.gif', title: 'Video Clip' },
-        { src: 'https://media.giphy.com/media/3o6Zt6KHxJTbXCnSvu/giphy.gif', title: 'Depth' },
-        { src: 'https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif', title: 'Camera Pose' },
-        { src: 'https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif', title: 'Dynamic Mask' }
+      videos: [
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4', title: 'Video Clip' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4', title: 'Depth' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_5mb.mp4', title: 'Camera Pose' }
       ],
       tech: ['Recommendation', 'Deep Learning', 'Graph']
     },
@@ -312,11 +295,10 @@ const Gallery = () => {
       category: 'waterfront',
       description: '面向物联网的边缘计算和AI推理平台，支持在资源受限的边缘设备上部署深度学习模型。平台采用了模型压缩、量化、剪枝等优化技术，显著降低了模型的计算和存储需求。支持多种硬件平台和推理框架，提供了完整的模型部署和管理工具链。在智能制造、智慧城市、自动驾驶等场景中发挥重要作用。',
       image: 'https://media.giphy.com/media/3o7qDEq2bMbcbPRQ2c/giphy.gif',
-      gifs: [
-        { src: 'https://media.giphy.com/media/3o7qDEq2bMbcbPRQ2c/giphy.gif', title: 'Video Clip' },
-        { src: 'https://media.giphy.com/media/l0HlPystfePnAI3G8/giphy.gif', title: 'Depth' },
-        { src: 'https://media.giphy.com/media/3o6Zt6KHxJTbXCnSvu/giphy.gif', title: 'Camera Pose' },
-        { src: 'https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif', title: 'Dynamic Mask' }
+      videos: [
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4', title: 'Video Clip' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4', title: 'Depth' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_5mb.mp4', title: 'Camera Pose' }
       ],
       tech: ['Edge Computing', 'Model Optimization', 'IoT']
     },
@@ -326,11 +308,10 @@ const Gallery = () => {
       category: 'urban',
       description: '面向物联网的边缘计算和AI推理平台，支持在资源受限的边缘设备上部署深度学习模型。平台采用了模型压缩、量化、剪枝等优化技术，显著降低了模型的计算和存储需求。支持多种硬件平台和推理框架，提供了完整的模型部署和管理工具链。在智能制造、智慧城市、自动驾驶等场景中发挥重要作用。',
       image: 'https://media.giphy.com/media/3o7qDEq2bMbcbPRQ2c/giphy.gif',
-      gifs: [
-        { src: 'https://media.giphy.com/media/3o7qDEq2bMbcbPRQ2c/giphy.gif', title: 'Video Clip' },
-        { src: 'https://media.giphy.com/media/l0HlPystfePnAI3G8/giphy.gif', title: 'Depth' },
-        { src: 'https://media.giphy.com/media/3o6Zt6KHxJTbXCnSvu/giphy.gif', title: 'Camera Pose' },
-        { src: 'https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif', title: 'Dynamic Mask' }
+      videos: [
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4', title: 'Video Clip' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4', title: 'Depth' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_5mb.mp4', title: 'Camera Pose' }
       ],
       tech: ['Edge Computing', 'Model Optimization', 'IoT']
     },
@@ -340,11 +321,10 @@ const Gallery = () => {
       category: 'natural',
       description: '面向物联网的边缘计算和AI推理平台，支持在资源受限的边缘设备上部署深度学习模型。平台采用了模型压缩、量化、剪枝等优化技术，显著降低了模型的计算和存储需求。支持多种硬件平台和推理框架，提供了完整的模型部署和管理工具链。在智能制造、智慧城市、自动驾驶等场景中发挥重要作用。',
       image: 'https://media.giphy.com/media/3o7qDEq2bMbcbPRQ2c/giphy.gif',
-      gifs: [
-        { src: 'https://media.giphy.com/media/3o7qDEq2bMbcbPRQ2c/giphy.gif', title: 'Video Clip' },
-        { src: 'https://media.giphy.com/media/l0HlPystfePnAI3G8/giphy.gif', title: 'Depth' },
-        { src: 'https://media.giphy.com/media/3o6Zt6KHxJTbXCnSvu/giphy.gif', title: 'Camera Pose' },
-        { src: 'https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif', title: 'Dynamic Mask' }
+      videos: [
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4', title: 'Video Clip' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4', title: 'Depth' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_5mb.mp4', title: 'Camera Pose' }
       ],
       tech: ['Edge Computing', 'Model Optimization', 'IoT']
     },
@@ -354,11 +334,10 @@ const Gallery = () => {
       category: 'waterfront',
       description: '面向物联网的边缘计算和AI推理平台，支持在资源受限的边缘设备上部署深度学习模型。平台采用了模型压缩、量化、剪枝等优化技术，显著降低了模型的计算和存储需求。支持多种硬件平台和推理框架，提供了完整的模型部署和管理工具链。在智能制造、智慧城市、自动驾驶等场景中发挥重要作用。',
       image: 'https://media.giphy.com/media/3o7qDEq2bMbcbPRQ2c/giphy.gif',
-      gifs: [
-        { src: 'https://media.giphy.com/media/3o7qDEq2bMbcbPRQ2c/giphy.gif', title: 'Video Clip' },
-        { src: 'https://media.giphy.com/media/l0HlPystfePnAI3G8/giphy.gif', title: 'Depth' },
-        { src: 'https://media.giphy.com/media/3o6Zt6KHxJTbXCnSvu/giphy.gif', title: 'Camera Pose' },
-        { src: 'https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif', title: 'Dynamic Mask' }
+      videos: [
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4', title: 'Video Clip' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4', title: 'Depth' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_5mb.mp4', title: 'Camera Pose' }
       ],
       tech: ['Edge Computing', 'Model Optimization', 'IoT']
     },
@@ -368,11 +347,10 @@ const Gallery = () => {
       category: 'natural',
       description: '面向物联网的边缘计算和AI推理平台，支持在资源受限的边缘设备上部署深度学习模型。平台采用了模型压缩、量化、剪枝等优化技术，显著降低了模型的计算和存储需求。支持多种硬件平台和推理框架，提供了完整的模型部署和管理工具链。在智能制造、智慧城市、自动驾驶等场景中发挥重要作用。',
       image: 'https://media.giphy.com/media/3o7qDEq2bMbcbPRQ2c/giphy.gif',
-      gifs: [
-        { src: 'https://media.giphy.com/media/3o7qDEq2bMbcbPRQ2c/giphy.gif', title: 'Video Clip' },
-        { src: 'https://media.giphy.com/media/l0HlPystfePnAI3G8/giphy.gif', title: 'Depth' },
-        { src: 'https://media.giphy.com/media/3o6Zt6KHxJTbXCnSvu/giphy.gif', title: 'Camera Pose' },
-        { src: 'https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif', title: 'Dynamic Mask' }
+      videos: [
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4', title: 'Video Clip' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4', title: 'Depth' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_5mb.mp4', title: 'Camera Pose' }
       ],
       tech: ['Edge Computing', 'Model Optimization', 'IoT']
     },
@@ -382,11 +360,10 @@ const Gallery = () => {
       category: 'waterfront',
       description: '面向物联网的边缘计算和AI推理平台，支持在资源受限的边缘设备上部署深度学习模型。平台采用了模型压缩、量化、剪枝等优化技术，显著降低了模型的计算和存储需求。支持多种硬件平台和推理框架，提供了完整的模型部署和管理工具链。在智能制造、智慧城市、自动驾驶等场景中发挥重要作用。',
       image: 'https://media.giphy.com/media/3o7qDEq2bMbcbPRQ2c/giphy.gif',
-      gifs: [
-        { src: 'https://media.giphy.com/media/3o7qDEq2bMbcbPRQ2c/giphy.gif', title: 'Video Clip' },
-        { src: 'https://media.giphy.com/media/l0HlPystfePnAI3G8/giphy.gif', title: 'Depth' },
-        { src: 'https://media.giphy.com/media/3o6Zt6KHxJTbXCnSvu/giphy.gif', title: 'Camera Pose' },
-        { src: 'https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif', title: 'Dynamic Mask' }
+      videos: [
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4', title: 'Video Clip' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4', title: 'Depth' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_5mb.mp4', title: 'Camera Pose' }
       ],
       tech: ['Edge Computing', 'Model Optimization', 'IoT']
     },
@@ -396,11 +373,10 @@ const Gallery = () => {
       category: 'interior',
       description: '面向物联网的边缘计算和AI推理平台，支持在资源受限的边缘设备上部署深度学习模型。平台采用了模型压缩、量化、剪枝等优化技术，显著降低了模型的计算和存储需求。支持多种硬件平台和推理框架，提供了完整的模型部署和管理工具链。在智能制造、智慧城市、自动驾驶等场景中发挥重要作用。',
       image: 'https://media.giphy.com/media/3o7qDEq2bMbcbPRQ2c/giphy.gif',
-      gifs: [
-        { src: 'https://media.giphy.com/media/3o7qDEq2bMbcbPRQ2c/giphy.gif', title: 'Video Clip' },
-        { src: 'https://media.giphy.com/media/l0HlPystfePnAI3G8/giphy.gif', title: 'Depth' },
-        { src: 'https://media.giphy.com/media/3o6Zt6KHxJTbXCnSvu/giphy.gif', title: 'Camera Pose' },
-        { src: 'https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif', title: 'Dynamic Mask' }
+      videos: [
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4', title: 'Video Clip' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4', title: 'Depth' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_5mb.mp4', title: 'Camera Pose' }
       ],
       tech: ['Edge Computing', 'Model Optimization', 'IoT']
     },
@@ -410,11 +386,10 @@ const Gallery = () => {
       category: 'waterfront',
       description: '面向物联网的边缘计算和AI推理平台，支持在资源受限的边缘设备上部署深度学习模型。平台采用了模型压缩、量化、剪枝等优化技术，显著降低了模型的计算和存储需求。支持多种硬件平台和推理框架，提供了完整的模型部署和管理工具链。在智能制造、智慧城市、自动驾驶等场景中发挥重要作用。',
       image: 'https://media.giphy.com/media/3o7qDEq2bMbcbPRQ2c/giphy.gif',
-      gifs: [
-        { src: 'https://media.giphy.com/media/3o7qDEq2bMbcbPRQ2c/giphy.gif', title: 'Video Clip' },
-        { src: 'https://media.giphy.com/media/l0HlPystfePnAI3G8/giphy.gif', title: 'Depth' },
-        { src: 'https://media.giphy.com/media/3o6Zt6KHxJTbXCnSvu/giphy.gif', title: 'Camera Pose' },
-        { src: 'https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif', title: 'Dynamic Mask' }
+      videos: [
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4', title: 'Video Clip' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4', title: 'Depth' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_5mb.mp4', title: 'Camera Pose' }
       ],
       tech: ['Edge Computing', 'Model Optimization', 'IoT']
     },
@@ -424,11 +399,10 @@ const Gallery = () => {
       category: 'rural',
       description: '面向物联网的边缘计算和AI推理平台，支持在资源受限的边缘设备上部署深度学习模型。平台采用了模型压缩、量化、剪枝等优化技术，显著降低了模型的计算和存储需求。支持多种硬件平台和推理框架，提供了完整的模型部署和管理工具链。在智能制造、智慧城市、自动驾驶等场景中发挥重要作用。',
       image: 'https://media.giphy.com/media/3o7qDEq2bMbcbPRQ2c/giphy.gif',
-      gifs: [
-        { src: 'https://media.giphy.com/media/3o7qDEq2bMbcbPRQ2c/giphy.gif', title: 'Video Clip' },
-        { src: 'https://media.giphy.com/media/l0HlPystfePnAI3G8/giphy.gif', title: 'Depth' },
-        { src: 'https://media.giphy.com/media/3o6Zt6KHxJTbXCnSvu/giphy.gif', title: 'Camera Pose' },
-        { src: 'https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif', title: 'Dynamic Mask' }
+      videos: [
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4', title: 'Video Clip' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4', title: 'Depth' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_5mb.mp4', title: 'Camera Pose' }
       ],
       tech: ['Edge Computing', 'Model Optimization', 'IoT']
     },
@@ -438,11 +412,10 @@ const Gallery = () => {
       category: 'interior',
       description: '面向物联网的边缘计算和AI推理平台，支持在资源受限的边缘设备上部署深度学习模型。平台采用了模型压缩、量化、剪枝等优化技术，显著降低了模型的计算和存储需求。支持多种硬件平台和推理框架，提供了完整的模型部署和管理工具链。在智能制造、智慧城市、自动驾驶等场景中发挥重要作用。',
       image: 'https://media.giphy.com/media/3o7qDEq2bMbcbPRQ2c/giphy.gif',
-      gifs: [
-        { src: 'https://media.giphy.com/media/3o7qDEq2bMbcbPRQ2c/giphy.gif', title: 'Video Clip' },
-        { src: 'https://media.giphy.com/media/l0HlPystfePnAI3G8/giphy.gif', title: 'Depth' },
-        { src: 'https://media.giphy.com/media/3o6Zt6KHxJTbXCnSvu/giphy.gif', title: 'Camera Pose' },
-        { src: 'https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif', title: 'Dynamic Mask' }
+      videos: [
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4', title: 'Video Clip' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4', title: 'Depth' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_5mb.mp4', title: 'Camera Pose' }
       ],
       tech: ['Edge Computing', 'Model Optimization', 'IoT']
     },
@@ -452,11 +425,10 @@ const Gallery = () => {
       category: 'natural',
       description: '面向物联网的边缘计算和AI推理平台，支持在资源受限的边缘设备上部署深度学习模型。平台采用了模型压缩、量化、剪枝等优化技术，显著降低了模型的计算和存储需求。支持多种硬件平台和推理框架，提供了完整的模型部署和管理工具链。在智能制造、智慧城市、自动驾驶等场景中发挥重要作用。',
       image: 'https://media.giphy.com/media/3o7qDEq2bMbcbPRQ2c/giphy.gif',
-      gifs: [
-        { src: 'https://media.giphy.com/media/3o7qDEq2bMbcbPRQ2c/giphy.gif', title: 'Video Clip' },
-        { src: 'https://media.giphy.com/media/l0HlPystfePnAI3G8/giphy.gif', title: 'Depth' },
-        { src: 'https://media.giphy.com/media/3o6Zt6KHxJTbXCnSvu/giphy.gif', title: 'Camera Pose' },
-        { src: 'https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif', title: 'Dynamic Mask' }
+      videos: [
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4', title: 'Video Clip' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4', title: 'Depth' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_5mb.mp4', title: 'Camera Pose' }
       ],
       tech: ['Edge Computing', 'Model Optimization', 'IoT']
     },
@@ -466,11 +438,10 @@ const Gallery = () => {
       category: 'urban',
       description: '面向物联网的边缘计算和AI推理平台，支持在资源受限的边缘设备上部署深度学习模型。平台采用了模型压缩、量化、剪枝等优化技术，显著降低了模型的计算和存储需求。支持多种硬件平台和推理框架，提供了完整的模型部署和管理工具链。在智能制造、智慧城市、自动驾驶等场景中发挥重要作用。',
       image: 'https://media.giphy.com/media/3o7qDEq2bMbcbPRQ2c/giphy.gif',
-      gifs: [
-        { src: 'https://media.giphy.com/media/3o7qDEq2bMbcbPRQ2c/giphy.gif', title: 'Video Clip' },
-        { src: 'https://media.giphy.com/media/l0HlPystfePnAI3G8/giphy.gif', title: 'Depth' },
-        { src: 'https://media.giphy.com/media/3o6Zt6KHxJTbXCnSvu/giphy.gif', title: 'Camera Pose' },
-        { src: 'https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif', title: 'Dynamic Mask' }
+      videos: [
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4', title: 'Video Clip' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4', title: 'Depth' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_5mb.mp4', title: 'Camera Pose' }
       ],
       tech: ['Edge Computing', 'Model Optimization', 'IoT']
     },
@@ -480,11 +451,10 @@ const Gallery = () => {
       category: 'rural',
       description: '面向物联网的边缘计算和AI推理平台，支持在资源受限的边缘设备上部署深度学习模型。平台采用了模型压缩、量化、剪枝等优化技术，显著降低了模型的计算和存储需求。支持多种硬件平台和推理框架，提供了完整的模型部署和管理工具链。在智能制造、智慧城市、自动驾驶等场景中发挥重要作用。',
       image: 'https://media.giphy.com/media/3o7qDEq2bMbcbPRQ2c/giphy.gif',
-      gifs: [
-        { src: 'https://media.giphy.com/media/3o7qDEq2bMbcbPRQ2c/giphy.gif', title: 'Video Clip' },
-        { src: 'https://media.giphy.com/media/l0HlPystfePnAI3G8/giphy.gif', title: 'Depth' },
-        { src: 'https://media.giphy.com/media/3o6Zt6KHxJTbXCnSvu/giphy.gif', title: 'Camera Pose' },
-        { src: 'https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif', title: 'Dynamic Mask' }
+      videos: [
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4', title: 'Video Clip' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4', title: 'Depth' },
+        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_5mb.mp4', title: 'Camera Pose' }
       ],
       tech: ['Edge Computing', 'Model Optimization', 'IoT']
     },
@@ -559,11 +529,14 @@ const Gallery = () => {
               >
                 <div className="relative overflow-hidden rounded-2xl bg-gray-100 aspect-[4/3] transition-shadow duration-300 group-hover:shadow-2xl">
                   {/* 图片 */}
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
+                  <video
+                src={item.videos[0].src}
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                autoPlay
+                loop
+                muted
+                playsInline
+              />
                   
                   {/* 放大图标 */}
                   <div className="absolute top-4 right-4 w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -662,18 +635,77 @@ Natraz              >
                 {/* 上半部分：GIF展示区域 */}
                 <div className={`${isDescriptionExpanded ? 'h-1/4' : 'h-3/4'} p-6 min-h-0 transition-all duration-300`}>
                   <div className="grid grid-cols-2 gap-4 h-full">
-                    {selectedImage.gifs.map((gif, index) => (
-                      <div key={`${selectedImage.id}-gif-${index}-${gif.src}`} className="flex flex-col items-center justify-center">
-                        <div className="aspect-video rounded-lg overflow-hidden w-full max-w-sm">
-                          <img
-                            src={gif.src}
-                            alt={`${selectedImage.title} - ${gif.title}`}
+                    {/* 第一列：Video Clip */}
+                    <div className="flex flex-col items-center justify-center">
+                      <div className="aspect-video rounded-lg overflow-hidden w-full">
+                        <video
+                          ref={(el) => {
+                            if (el && selectedImage.videos) {
+                              el.currentTime = 0;
+                              el.play();
+                            }
+                          }}
+                          src={selectedImage.videos?.[0]?.src}
+                          className="w-full h-full object-cover"
+                          autoPlay
+                          muted
+                          loop
+                          playsInline
+                        />
+                      </div>
+                      <span className="mt-3 text-xs md:text-sm lg:text-md xl:text-lg 2xl:text:xl text-gray-600 font-medium text-center">
+                        {selectedImage.videos?.[0]?.title}
+                      </span>
+                    </div>
+                    
+                    {/* 第二列：Depth 和 Camera Pose */}
+                    <div className="grid grid-rows-2 gap-4 h-full">
+                      {/* Depth */}
+                      <div className="flex flex-col items-center justify-center">
+                        <div className="aspect-video rounded-lg overflow-hidden w-full">
+                          <video
+                            ref={(el) => {
+                              if (el && selectedImage.videos) {
+                                el.currentTime = 0;
+                                el.play();
+                              }
+                            }}
+                            src={selectedImage.videos?.[1]?.src}
                             className="w-full h-full object-cover"
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
                           />
                         </div>
-                        <span className="mt-3 text-xs md:text-sm lg:text-md xl:text-lg 2xl:text:xl text-gray-600 font-medium text-center">{gif.title}</span>
+                        <span className="mt-2 text-xs md:text-sm lg:text-md xl:text-lg 2xl:text:xl text-gray-600 font-medium text-center">
+                          {selectedImage.videos?.[1]?.title}
+                        </span>
                       </div>
-                    ))}
+                      
+                      {/* Camera Pose */}
+                      <div className="flex flex-col items-center justify-center">
+                        <div className="aspect-video rounded-lg overflow-hidden w-full">
+                          <video
+                            ref={(el) => {
+                              if (el && selectedImage.videos) {
+                                el.currentTime = 0;
+                                el.play();
+                              }
+                            }}
+                            src={selectedImage.videos?.[2]?.src}
+                            className="w-full h-full object-cover"
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                          />
+                        </div>
+                        <span className="mt-2 text-xs md:text-sm lg:text-md xl:text-lg 2xl:text:xl text-gray-600 font-medium text-center">
+                          {selectedImage.videos?.[2]?.title}
+                        </span>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
