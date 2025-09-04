@@ -402,7 +402,7 @@ const Gallery = () => {
       ]
     },
     {
-      id: 20,
+      id: 15,
       title: 'WL5wNC3vEXc_189',
       category: 'natural',
       description: (
@@ -527,7 +527,7 @@ const Gallery = () => {
       ]
     },
     {
-      id: 15,
+      id: 20,
       title: 'i_bChYr7fOg_218',
       category: 'rural',
       description: (
