@@ -166,10 +166,13 @@ const Hero = () => {
               Explore Project
             </motion.button>
             
-            <motion.a
-                 href="https://www.google.com"
-                 target="_blank"
-                 rel="noopener noreferrer"
+            <motion.button
+                 onClick={() => {
+                   const downloadSection = document.getElementById('download');
+                   if (downloadSection) {
+                     downloadSection.scrollIntoView({ behavior: 'smooth' });
+                   }
+                 }}
                  whileHover={{ scale: 1.05 }}
                  whileTap={{ scale: 0.95 }}
                  className="inline-block text-md md:text-md lg:text-md xl:text-xl 2xl:text-3xl px-6 py-3 text-gray-700 rounded-full font-medium transition-all duration-300 hover:shadow-lg"
@@ -188,7 +191,7 @@ const Hero = () => {
                  }}
                >
                  Download Dataset
-               </motion.a>
+               </motion.button>
           </div>
           
           {/* 外部链接按钮 */}

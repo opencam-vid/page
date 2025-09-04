@@ -82,7 +82,7 @@ const Features = () => {
                   alt={`展示图片 ${index + 1}`}
                   className="w-full h-auto object-contain rounded-lg mb-6"
                 />
-                <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed text-justify">
+                <p className="text-xs lg:text-sm xl:text-lg 2xl:text-xl text-gray-700 max-w-[80%] mx-auto leading-relaxed text-justify">
                    {image.description}
                  </p>
               </div>
