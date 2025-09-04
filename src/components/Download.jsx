@@ -36,17 +36,17 @@ const Download = () => {
   const datasets = [
     {
       name: 'SpatialVID',
-      description: '基础数据集，包含核心的空间视频数据，适合初学者和基础研究使用。包含1000个高质量视频样本，涵盖多种场景和动作类型。',
+      description: '10.5M samples / 37.0 khrs duration / ~8.0 TB',
       downloadUrl: '#'
     },
     {
       name: 'SpatialVID-HQ',
-      description: '扩展数据集，在基础数据集基础上增加了更多复杂场景和高分辨率视频数据。包含5000个视频样本，支持更深入的研究和模型训练。',
+      description: '10.5M samples / 37.0 khrs duration / ~8.0 TB',
       downloadUrl: '#'
     },
     {
       name: 'SpatialVID-Raw',
-      description: '专业版数据集，包含完整的标注信息和元数据，适合商业应用和高级研究。包含10000个视频样本，提供详细的空间关系标注。',
+      description: '10.5M samples / 37.0 khrs duration / ~8.0 TB',
       downloadUrl: '#'
     }
   ]

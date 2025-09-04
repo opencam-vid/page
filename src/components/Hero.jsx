@@ -96,16 +96,6 @@ const Hero = () => {
     <section id="home" ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* 背景 */}
       <div className="absolute inset-0 z-10 bg-gradient-to-br from-blue-200 via-indigo-10 to-purple-200" />
-
-      {/* 背景3D场景 */}
-      {/* <div className="absolute inset-0 z-15">
-        <Canvas camera={{ position: [0, 0, 5] }}>
-          <ambientLight intensity={0.5} />
-          <pointLight position={[10, 10, 10]} />
-          <AnimatedSphere />
-          <OrbitControls enableZoom={false} enablePan={false} autoRotate autoRotateSpeed={0.5} />
-        </Canvas>
-      </div> */}
       
       {/* 主要内容 */}
       <div className="relative z-20 text-center px-6 py-16 w-full max-w-none mx-auto lg:max-w-7xl xl:max-w-none 2xl:max-w-none">

@@ -63,8 +63,8 @@ const Gallery = () => {
   const galleryItems = [
     {
       id: 1,
-      title: 'AI模型架构图',
-      category: 'urban',
+      title: '-hGQfHfuyd8_151',
+      category: 'waterfront',
       description: (
         <div style={{lineHeight: '1.4', textAlign: 'left'}}>
           <div style={{marginBottom: '8px', paddingLeft: '16px', textIndent: '-16px'}}>• 展示我们最新开发的<strong style={{color: '#0071e3'}}>深度学习模型架构</strong>，具有创新的<strong>注意力机制</strong>。</div>
@@ -73,13 +73,12 @@ const Gallery = () => {
           <div style={{paddingLeft: '16px', textIndent: '-16px'}}>• 我们还引入了新的<span style={{color: '#6f42c1'}}>正则化技术</span>和<span style={{color: '#6f42c1'}}>优化策略</span>，使得模型训练更加稳定高效。该架构已经在实际生产环境中得到验证，能够处理大规模的实时数据流，为用户提供准确可靠的预测结果。</div>
         </div>
       ),
-      image: 'https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif',
       videos: [
         { src: '/SpatialVID/samples/-hGQfHfuyd8_151/clip.mp4', title: 'Video Clip' },
-        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4', title: 'Depth' },
-        { src: 'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_5mb.mp4', title: 'Camera Pose' }
+        { src: '/SpatialVID/samples/-hGQfHfuyd8_151/depth_video.mp4', title: 'Depth' },
+        { src: '/SpatialVID/samples/-hGQfHfuyd8_151/pose_video.mp4', title: 'Camera Pose' }
       ],
-      tech: ['PyTorch', 'Transformer', 'CUDA']
+      tech: ['Waterfront (Lake View)', 'Bright', 'Daytime', 'Sunny', 'Deserted']
     },
     {
       id: 2,
@@ -460,9 +459,10 @@ const Gallery = () => {
     },
   ]
 
-  const filteredItems = selectedCategory === 'all' 
+  const filteredItems = (selectedCategory === 'all' 
     ? galleryItems 
-    : galleryItems.filter(item => item.category === selectedCategory)
+    : galleryItems.filter(item => item.category === selectedCategory))
+    .sort((a, b) => a.id - b.id)
 
   // 根据showMore状态决定显示的样例数量
   const displayedItems = showMore ? filteredItems : filteredItems.slice(0, 9)
@@ -634,24 +634,25 @@ const Gallery = () => {
 Natraz              >
                 {/* 上半部分：GIF展示区域 */}
                 <div className={`${isDescriptionExpanded ? 'h-1/4' : 'h-3/4'} p-6 min-h-0 transition-all duration-300`}>
-                  <div className="grid grid-cols-2 gap-4 h-full">
+                  <div className="grid gap-4 h-full" style={{gridTemplateColumns: '2fr 1fr'}}>
                     {/* 第一列：Video Clip */}
                     <div className="flex flex-col items-center justify-center">
                       <div className="aspect-video rounded-lg overflow-hidden w-full">
                         <video
-                          ref={(el) => {
-                            if (el && selectedImage.videos) {
-                              el.currentTime = 0;
-                              el.play();
-                            }
-                          }}
-                          src={selectedImage.videos?.[0]?.src}
-                          className="w-full h-full object-cover"
-                          autoPlay
-                          muted
-                          loop
-                          playsInline
-                        />
+                            ref={(el) => {
+                              if (el && selectedImage.videos) {
+                                el.currentTime = 0;
+                                el.play();
+                              }
+                            }}
+                            src={selectedImage.videos?.[0]?.src}
+                            className="w-full h-full object-cover"
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            disablePictureInPicture
+                          />
                       </div>
                       <span className="mt-3 text-xs md:text-sm lg:text-md xl:text-lg 2xl:text:xl text-gray-600 font-medium text-center">
                         {selectedImage.videos?.[0]?.title}
@@ -659,7 +660,7 @@ Natraz              >
                     </div>
                     
                     {/* 第二列：Depth 和 Camera Pose */}
-                    <div className="grid grid-rows-2 gap-4 h-full">
+                    <div className="grid grid-rows-2 gap-1 h-full">
                       {/* Depth */}
                       <div className="flex flex-col items-center justify-center">
                         <div className="aspect-video rounded-lg overflow-hidden w-full">
@@ -676,9 +677,10 @@ Natraz              >
                             muted
                             loop
                             playsInline
+                            disablePictureInPicture
                           />
                         </div>
-                        <span className="mt-2 text-xs md:text-sm lg:text-md xl:text-lg 2xl:text:xl text-gray-600 font-medium text-center">
+                        <span className="mt-1 text-xs md:text-sm lg:text-md xl:text-lg 2xl:text:xl text-gray-600 font-medium text-center">
                           {selectedImage.videos?.[1]?.title}
                         </span>
                       </div>
@@ -699,9 +701,10 @@ Natraz              >
                             muted
                             loop
                             playsInline
+                            disablePictureInPicture
                           />
                         </div>
-                        <span className="mt-2 text-xs md:text-sm lg:text-md xl:text-lg 2xl:text:xl text-gray-600 font-medium text-center">
+                        <span className="mt-1 text-xs md:text-sm lg:text-md xl:text-lg 2xl:text:xl text-gray-600 font-medium text-center">
                           {selectedImage.videos?.[2]?.title}
                         </span>
                       </div>

@@ -100,7 +100,7 @@ const About = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
               viewport={{ once: false, amount: 0.1 }}
-              className="mb-12 w-full max-w-5xl lg:max-w-6xl xl:max-w-7xl 2xl:max-w-none mx-auto"
+              className="mb-6 w-full max-w-5xl lg:max-w-6xl xl:max-w-7xl 2xl:max-w-none mx-auto"
             >
               <div className="relative w-full overflow-visible rounded-2xl transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20 hover:z-10">
                 <img 
@@ -112,16 +112,32 @@ const About = () => {
             </motion.div>
 
             
-            {/* <p className="text-xl text-gray-400 leading-relaxed mb-8">
-              SpatialVID is a large-scale dynamic video dataset with 
-              <br />
-              explicit geometric metadata and structured spatiotemporal captions
-            </p> */}
-            
-            <p className="text-xs md:text-sm lg:text-md xl:text-lg 2xl:text-2xl text-gray-500 leading-relaxed mb-1 text-justify">
+            <p className="text-xs md:text-sm lg:text-md xl:text-lg 2xl:text-2xl text-gray-500 leading-relaxed mb-5 text-justify">
               SpatialVID encompasses diverse scenes curated from over 21,000 hours of raw video. The resulting dataset consists of 7,089 hours of annotated videos, comprising 2.7 million dynamic clips. The dataset provides rich spatial annotations, including camera poses, depth maps, and dynamic masks, as well as structured captions and labels describing camera motion, scene types, and their combinations.
             </p>
+
+            {/* 大图展示 */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ once: false, amount: 0.1 }}
+              className="mb-1 w-full max-w-5xl lg:max-w-6xl xl:max-w-7xl 2xl:max-w-none mx-auto"
+            >
+              <div className="relative w-full overflow-visible rounded-2xl transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20 hover:z-10">
+                <img 
+                  src="/SpatialVID/img/curation.png" 
+                  alt="Curation"
+                  className="w-full h-auto hover:opacity-100 transition-all duration-500 hover:scale-[1.02]"
+                />
+              </div>
+            </motion.div>
           </motion.div>
+
+          <p className="text-xs md:text-sm lg:text-md xl:text-lg 2xl:text-2xl text-gray-500 leading-relaxed mb-5 text-justify">
+              Hierarchical curation pipeline of SpatialVID
+          </p>
+
         </div>
         
       </div>

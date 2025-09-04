@@ -40,11 +40,11 @@ const Features = () => {
     },
     {
       src: '/SpatialVID/img/page_img2.png',
-      description: '这是第二张展示图片的介绍文字，可以描述图片的内容和相关信息。'
+      description: 'none',
     },
     {
       src: '/SpatialVID/img/page_img3.png',
-      description: '这是第三张展示图片的介绍文字，可以描述图片的内容和相关信息。'
+      description: 'none',
     }
   ]
 
@@ -80,11 +80,8 @@ const Features = () => {
                 <img 
                   src={image.src} 
                   alt={`展示图片 ${index + 1}`}
-                  className="w-full h-auto object-contain rounded-lg mb-6"
+                  className="w-full h-auto object-contain rounded-lg"
                 />
-                <p className="text-xs lg:text-sm xl:text-lg 2xl:text-xl text-gray-700 max-w-[80%] mx-auto leading-relaxed text-justify">
-                   {image.description}
-                 </p>
               </div>
             </motion.div>
           ))}
