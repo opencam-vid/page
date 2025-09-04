@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
 import Features from './components/Features'
+import Download from './components/Download'
 import Research from './components/Research'
 import Gallery from './components/Gallery'
 import Contact from './components/Contact'
@@ -45,6 +46,7 @@ function App() {
       <About />
       <Gallery />
       <Features />
+      <Download />
       {/* <Research /> */}
       <Contact />
       <Footer />

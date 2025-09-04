@@ -24,6 +24,7 @@ const Navbar = () => {
     { name: 'Overview', href: '#about' },
     { name: 'Samples', href: '#gallery' },
     { name: 'Statistics', href: '#features' },
+    { name: 'Download', href: '#download' },
     // { name: 'Research', href: '#research' },
     { name: 'Citation', href: '#contact' },
   ]

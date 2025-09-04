@@ -104,7 +104,7 @@ const About = () => {
             >
               <div className="relative w-full overflow-visible rounded-2xl transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20 hover:z-10">
                 <img 
-                  src="/img/overview.png" 
+                  src="/SpatialVID/img/overview.png" 
                   alt="Overview"
                   className="w-full h-auto hover:opacity-100 transition-all duration-500 hover:scale-[1.02]"
                 />

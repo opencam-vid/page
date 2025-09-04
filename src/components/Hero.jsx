@@ -141,7 +141,7 @@ const Hero = () => {
           transition={{ delay: 1 }}
         >
           <div className="mb-2">
-            Jiahao Wang, Yufeng Yuan, Rujie Zheng, Youtian Lin, Yi Zhang
+            Jiahao Wang, Yufeng Yuan, Rujie Zheng, <a href="https://linyou.github.io/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">Youtian Lin</a>, Yi Zhang
           </div>
           <div className="mb-2">
             Yajie Bao, <a href="https://linzhuo.xyz/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">Lin-Zhuo Chen</a>, Yanxi Zhou, Xun Cao, <a href="https://yoyo000.github.io/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">Yao Yao</a><sup>*</sup>

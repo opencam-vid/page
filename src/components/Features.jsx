@@ -35,15 +35,15 @@ const Features = () => {
 
   const images = [
     {
-      src: '/img/page_img1.png',
+      src: '/SpatialVID/img/page_img1.png',
       description: '这是第一张展示图片的介绍文字，可以描述图片的内容和相关信息。'
     },
     {
-      src: '/img/page_img2.png',
+      src: '/SpatialVID/img/page_img2.png',
       description: '这是第二张展示图片的介绍文字，可以描述图片的内容和相关信息。'
     },
     {
-      src: '/img/page_img3.png',
+      src: '/SpatialVID/img/page_img3.png',
       description: '这是第三张展示图片的介绍文字，可以描述图片的内容和相关信息。'
     }
   ]
@@ -52,18 +52,18 @@ const Features = () => {
     <section id="features" ref={ref} className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-12"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: false, amount: 0.1 }}
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-center mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-center mb-4">
             <span className="gradient-text">Statistics</span>
           </h2>
-          <p className="text-2xl 2xl:text-3xl text-gray-500 max-w-[70vw] mx-auto mb-4">
+          {/* <p className="text-2xl 2xl:text-3xl text-gray-500 max-w-[70vw] mx-auto mb-4">
             我们的研究项目具备多项先进特性，为科研工作提供强有力的技术支持
-          </p>
+          </p> */}
         </motion.div>
         
         <div ref={cardsRef} className="flex flex-col items-center space-y-12">
