@@ -402,7 +402,7 @@ const Gallery = () => {
       ]
     },
     {
-      id: 15,
+      id: 20,
       title: 'WL5wNC3vEXc_189',
       category: 'natural',
       description: (
@@ -527,7 +527,7 @@ const Gallery = () => {
       ]
     },
     {
-      id: 20,
+      id: 15,
       title: 'i_bChYr7fOg_218',
       category: 'rural',
       description: (
@@ -1165,14 +1165,23 @@ Natraz              >
                       {isDescriptionExpanded ? (
                         selectedImage.description
                       ) : (
-                        // 只显示第一项描述
+                        // 只显示当前sample的Shot Immersion内容
                         typeof selectedImage.description === 'string' ? (
                           <div className="text-gray-700 text-base md:text-sm lg:text-md xl:text-base 2xl:text-xl leading-relaxed">
                             {selectedImage.description.split('。')[0] + '。'}
                           </div>
                         ) : (
-                          <div style={{lineHeight: '1.4', textAlign: 'left'}}>
-                            <div style={{marginBottom: '8px', paddingLeft: '16px', textIndent: '-16px'}}>• 展示我们最新开发的<strong style={{color: '#0071e3'}}>深度学习模型架构</strong>，具有创新的<strong>注意力机制</strong>。</div>
+                          <div style={{lineHeight: '1.4', textAlign: 'justify'}}>
+                            {/* 直接获取当前sample的description中的第三个div（Shot Immersion部分） */}
+                            {(() => {
+                              const descriptionElement = selectedImage.description;
+                              if (descriptionElement && descriptionElement.props && descriptionElement.props.children && descriptionElement.props.children[2]) {
+                                return descriptionElement.props.children[2];
+                              }
+                              return (
+                                <div style={{marginBottom: '8px', paddingLeft: '16px', textIndent: '-16px'}}>• <strong style={{color: ' #00bf63', fontWeight: 'bold'}}>Shot Immersion</strong>: Content not available.</div>
+                              );
+                            })()} 
                           </div>
                         )
                       )}
