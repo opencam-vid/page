@@ -28,7 +28,7 @@ const About = () => {
         {/* 主要内容 */}
         <div className="flex flex-col items-center text-center">
           {/* YouTube视频 */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
@@ -36,7 +36,7 @@ const About = () => {
             className="relative mb-16 w-[90%] max-w-[90%]"
           >
             <div className="relative w-full aspect-video overflow-hidden rounded-3xl bg-gray-100">
-              {/* 加载指示器 */}
+              
               {!isVideoLoaded && (
                 <div className="absolute inset-0 flex items-center justify-center bg-gray-100 z-10">
                   <div className="text-center">
@@ -58,11 +58,9 @@ const About = () => {
                 loading="lazy"
               ></iframe>
             </div>
-            
-            {/* 浮动元素 */}
 
 
-          </motion.div>
+          </motion.div> */}
           
           {/* 下方内容 */}
           <motion.div

@@ -95,26 +95,27 @@ const Hero = () => {
   return (
     <section id="home" ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* 背景 */}
-      <div className="absolute inset-0 z-10 bg-gradient-to-br from-blue-200 via-indigo-10 to-purple-200" />
+      {/* <div className="absolute inset-0 z-10 bg-gradient-to-br from-blue-200 via-indigo-10 to-purple-200" /> */}
+      <div className="absolute inset-0 z-10 bg-white" />
       
       {/* 主要内容 */}
-      <div className="relative z-20 text-center px-6 py-16 w-full max-w-none mx-auto lg:max-w-7xl xl:max-w-none 2xl:max-w-none">
+      <div className="relative z-20 text-center px-6 py-16 w-full max-w-none mx-auto max-w-[80vw]">
         <motion.h1
           ref={titleRef}
-          className="flex items-center justify-center gap-4 text-5xl sm:text-5xl md:text-7xl lg:text-9xl xl:text-11xl 2xl:text-16xl font-bold mb-10 leading-tight"
+          className="flex items-center justify-center gap-4 text-3xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-8xl 2xl:text-10xl font-bold mb-10 mt-0 leading-tight"
           initial={{ opacity: 0 }}
         >
           <img 
             src={spatialLogo} 
             alt="SpatialVID Logo" 
-            className="w-20 h-20 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 xl:w-32 xl:h-32 2xl:w-40 2xl:h-40"
+            className="w-20 h-20 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 xl:w-30 xl:h-30 2xl:w-34 2xl:h-34"
           />
           <CharHighlight text="SpatialVID" />
         </motion.h1>
         
         <motion.p
           ref={subtitleRef}
-          className="text-2xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-7xl text-black mb-12 max-w-[60vw] mx-auto leading-relaxed"
+          className="text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl text-black mb-12 max-w-[60vw] mx-auto leading-relaxed"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.7 }}
@@ -125,19 +126,22 @@ const Hero = () => {
         
         <motion.div
           ref={heroRef}
-          className="text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl text-black mb-16 max-w-[75vw] mx-auto"
+          className="text-xs md:text-sm lg:text-md xl:text-lg 2xl:text-xl text-black mb-16 max-w-[80vw] mx-auto"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1 }}
         >
           <div className="mb-2">
-            Jiahao Wang, Yufeng Yuan, Rujie Zheng, <a href="https://linyou.github.io/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">Youtian Lin</a>, Yi Zhang
+            Jiahao Wang<sup>1 *</sup>, Yufeng Yuan<sup>1 *</sup>, Rujie Zheng<sup>1 *</sup>, <a href="https://linyou.github.io/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">Youtian Lin</a><sup>1</sup>, Yi Zhang<sup>1</sup>, Yajie Bao<sup>1</sup>, <a href="https://linzhuo.xyz/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">Lin-Zhuo Chen</a><sup>1</sup>,
           </div>
           <div className="mb-2">
-            Yajie Bao, <a href="https://linzhuo.xyz/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">Lin-Zhuo Chen</a>, Yanxi Zhou, Xun Cao, <a href="https://yoyo000.github.io/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">Yao Yao</a><sup>*</sup>
+             Yanxi Zhou<sup>1</sup>, Xiaoxiao Long<sup>1</sup>, Hao Zhu<sup>1</sup>, Zhaoxiang Zhang<sup>2</sup>, Xun Cao<sup>1</sup>, <a href="https://yoyo000.github.io/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">Yao Yao</a><sup>1 †</sup>
           </div>
-          <div className="mt-6 text-md md:text-md lg:text-lg xl:text-xl 2xl:text-3xl leading-relaxed">
-            Nanjing University
+          <div className="mt-6 text-xs md:text-sm lg:text-md xl:text-lg 2xl:text-xl leading-relaxed">
+            <sup>1</sup>Nanjing University&nbsp;&nbsp;&nbsp;&nbsp;<sup>2</sup>Institute of Automation, Chinese Academy of Science
+          </div>
+          <div className="mt-2 text-xs md:text-sm lg:text-md xl:text-lg 2xl:text-xl leading-relaxed">
+            <sup>†</sup>Equal contribution&nbsp;&nbsp;&nbsp;&nbsp;<sup>*</sup>Corresponding author
           </div>
         </motion.div>
         

@@ -409,7 +409,7 @@ const Gallery = () => {
         <div style={{lineHeight: '1.4', textAlign: 'left'}}>
           <div style={{marginBottom: '8px', paddingLeft: '16px', textIndent: '-16px'}}>• <strong style={{color: ' #0071e3', fontWeight: 'bold'}}>Scene Abstract</strong>: A serene countryside scene features a dirt path winding through a green meadow, bordered by trees and wooden huts, with a distant lake and town under a clear blue sky.</div>
           <div style={{marginBottom: '8px', paddingLeft: '16px', textIndent: '-16px'}}>• <strong style={{color: ' #ff6b35', fontWeight: 'bold'}}>Scene Description</strong>: A picturesque landscape unfolds, featuring a dirt path winding uphill through a vibrant green meadow. Lush trees line the left side of the path, casting shadows. Small wooden huts dot the hillside, adding to the idyllic scene. In the distance, a serene lake is nestled among rolling hills, with a town visible along its shore. The sky is a clear blue, typical of daytime, and fluffy white clouds drift lazily. The overall atmosphere is peaceful and inviting, evoking a sense of tranquility.</div>
-          <div style={{marginBottom: '8px', paddingLeft: '16px', textIndent: '-16px'}}>• <strong style={{color: ' #00bf63', fontWeight: 'bold'}}>Shot Immersion</strong>: The camera glides forward along a winding dirt path, revealing lush greenery and towering trees on one side. As it gently shifts right, wooden huts and rolling hills come into view, all bathed in the bright light of day, creating a peaceful and immersive journey through the countryside.</div>
+          <div style={{marginBottom: '8px', paddingLeft: '16px', textIndent: '-16px'}}>• <strong style={{color: ' #00bf63', fontWeight: 'bold'}}>Shot Immersion</strong>: The camera glides forward along a windiang dirt path, revealing lush greenery and towering trees on one side. As it gently shifts right, wooden huts and rolling hills come into view, all bathed in the bright light of day, creating a peaceful and immersive journey through the countryside.</div>
           <div style={{marginBottom: '8px', paddingLeft: '16px', textIndent: '-16px'}}>• <strong style={{color: ' #6f42c1', fontWeight: 'bold'}}>Camera Motion</strong>: The camera steadily moves forward along a winding path, with a subtle shift to the right as it ascends. The trajectory shows a consistent forward translate, with minimal lateral or vertical adjustments, maintaining a smooth and steady motion.</div>
         </div>
       ),
@@ -950,6 +950,13 @@ const Gallery = () => {
                 loop
                 muted
                 playsInline
+                style={{
+                  filter: 'brightness(1) contrast(1.1) saturate(1.05)',
+                  imageRendering: 'crisp-edges',
+                  backfaceVisibility: 'hidden',
+                  transform: 'translateZ(0)',
+                  willChange: 'transform'
+                }}
               />
                   
                   {/* 放大图标 */}
@@ -1066,6 +1073,13 @@ Natraz              >
                             loop
                             playsInline
                             disablePictureInPicture
+                            style={{
+                              filter: 'brightness(1) contrast(1.1) saturate(1.05)',
+                              imageRendering: 'crisp-edges',
+                              backfaceVisibility: 'hidden',
+                              transform: 'translateZ(0)',
+                              willChange: 'transform'
+                            }}
                           />
                       </div>
                       <span className="mt-3 text-xs md:text-sm lg:text-md xl:text-lg 2xl:text:xl text-gray-600 font-medium text-center">
@@ -1092,6 +1106,13 @@ Natraz              >
                             loop
                             playsInline
                             disablePictureInPicture
+                            style={{
+                              filter: 'brightness(1) contrast(1.1) saturate(1.05)',
+                              imageRendering: 'crisp-edges',
+                              backfaceVisibility: 'hidden',
+                              transform: 'translateZ(0)',
+                              willChange: 'transform'
+                            }}
                           />
                         </div>
                         <span className="mt-1 text-xs md:text-sm lg:text-md xl:text-lg 2xl:text:xl text-gray-600 font-medium text-center">
@@ -1116,6 +1137,13 @@ Natraz              >
                             loop
                             playsInline
                             disablePictureInPicture
+                            style={{
+                              filter: 'brightness(1) contrast(1.1) saturate(1.05)',
+                              imageRendering: 'crisp-edges',
+                              backfaceVisibility: 'hidden',
+                              transform: 'translateZ(0)',
+                              willChange: 'transform'
+                            }}
                           />
                         </div>
                         <span className="mt-1 text-xs md:text-sm lg:text-md xl:text-lg 2xl:text:xl text-gray-600 font-medium text-center">
