@@ -30,7 +30,7 @@ const Contact = () => {
   }
 
   return (
-    <section id="contact" ref={ref} className="pt-10 pb-10 bg-white">
+    <section id="contact" ref={ref} className="pt-20 pb-10 bg-white">
       <div className="container mx-auto px-6">
         <motion.div
           className="text-center mb-12"

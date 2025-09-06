@@ -1,7 +1,195 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import gsap from 'gsap'
+
+// 视频加载队列管理器
+class VideoLoadQueue {
+  constructor(maxConcurrent = 3) {
+    this.maxConcurrent = maxConcurrent
+    this.currentLoading = 0
+    this.queue = []
+  }
+
+  async loadVideo(src) {
+    return new Promise((resolve, reject) => {
+      const loadTask = () => {
+        this.currentLoading++
+        const video = document.createElement('video')
+        video.src = src
+        video.preload = 'metadata'
+        
+        const cleanup = () => {
+          this.currentLoading--
+          this.processQueue()
+        }
+        
+        video.addEventListener('loadeddata', () => {
+          cleanup()
+          resolve(video)
+        })
+        
+        video.addEventListener('error', (error) => {
+          cleanup()
+          reject(error)
+        })
+      }
+
+      if (this.currentLoading < this.maxConcurrent) {
+        loadTask()
+      } else {
+        this.queue.push(loadTask)
+      }
+    })
+  }
+
+  processQueue() {
+    if (this.queue.length > 0 && this.currentLoading < this.maxConcurrent) {
+      const nextTask = this.queue.shift()
+      nextTask()
+    }
+  }
+}
+
+// 全局视频加载队列
+const videoLoadQueue = new VideoLoadQueue(3)
+
+// 懒加载视频组件
+const LazyVideo = ({ src, className, style, onLoad, priority = 'normal', ...props }) => {
+  const [isLoaded, setIsLoaded] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
+  const [hasError, setHasError] = useState(false)
+  const [loadProgress, setLoadProgress] = useState(0)
+  const videoRef = useRef(null)
+  const [ref, inView] = useInView({
+    threshold: 0.1,
+    rootMargin: priority === 'high' ? '100px' : '50px',
+    triggerOnce: true
+  })
+
+  useEffect(() => {
+    if (inView && !isLoaded && !isLoading && !hasError) {
+      setIsLoading(true)
+      setLoadProgress(10)
+      
+      // 使用队列管理器加载视频
+      videoLoadQueue.loadVideo(src)
+        .then((video) => {
+          setLoadProgress(100)
+          setTimeout(() => {
+            setIsLoaded(true)
+            setIsLoading(false)
+            onLoad && onLoad()
+          }, 100)
+        })
+        .catch((error) => {
+          console.warn(`Failed to load video: ${src}`, error)
+          setHasError(true)
+          setIsLoading(false)
+          setLoadProgress(0)
+        })
+      
+      // 模拟加载进度
+      const progressInterval = setInterval(() => {
+        setLoadProgress(prev => {
+          if (prev >= 90) {
+            clearInterval(progressInterval)
+            return prev
+          }
+          return prev + Math.random() * 10
+        })
+      }, 200)
+      
+      return () => clearInterval(progressInterval)
+    }
+  }, [inView, src, isLoaded, isLoading, hasError, onLoad, priority])
+
+  return (
+    <div ref={ref} className="relative w-full h-full">
+      {/* 加载状态 */}
+      {!isLoaded && !hasError && (
+        <motion.div 
+          className="absolute inset-0 bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.2 }}
+        >
+          {isLoading ? (
+            <div className="flex flex-col items-center gap-3">
+              <div className="relative">
+                <div className="w-12 h-12 border-3 border-gray-200 rounded-full"></div>
+                <div 
+                  className="absolute top-0 left-0 w-12 h-12 border-3 border-cyan-500 border-t-transparent rounded-full animate-spin"
+                  style={{
+                    animationDuration: '1s'
+                  }}
+                ></div>
+              </div>
+              <div className="text-center">
+                <div className="text-sm font-medium text-gray-600 mb-1">Loading Video</div>
+                <div className="w-24 h-1 bg-gray-200 rounded-full overflow-hidden">
+                  <motion.div 
+                    className="h-full bg-gradient-to-r from-cyan-500 to-teal-500 rounded-full"
+                    initial={{ width: 0 }}
+                    animate={{ width: `${loadProgress}%` }}
+                    transition={{ duration: 0.3 }}
+                  />
+                </div>
+                <div className="text-xs text-gray-500 mt-1">{Math.round(loadProgress)}%</div>
+              </div>
+            </div>
+          ) : (
+            <motion.div 
+              className="w-16 h-16 bg-white rounded-xl shadow-sm flex items-center justify-center"
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.2 }}
+            >
+              <svg className="w-8 h-8 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M8 5v10l8-5-8-5z"/>
+              </svg>
+            </motion.div>
+          )}
+        </motion.div>
+      )}
+      
+      {/* 错误状态 */}
+      {hasError && (
+        <motion.div 
+          className="absolute inset-0 bg-gradient-to-br from-red-50 to-red-100 flex items-center justify-center"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
+        >
+          <div className="flex flex-col items-center gap-2">
+            <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
+              <svg className="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clipRule="evenodd"/>
+              </svg>
+            </div>
+            <div className="text-center">
+              <div className="text-sm font-medium text-red-600">Load Failed</div>
+              <div className="text-xs text-red-500">Video unavailable</div>
+            </div>
+          </div>
+        </motion.div>
+      )}
+      
+      {/* 实际视频 */}
+      {isLoaded && (
+        <motion.video
+          ref={videoRef}
+          src={src}
+          className={className}
+          style={style}
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.4, ease: 'easeOut' }}
+          {...props}
+        />
+      )}
+    </div>
+  )
+}
 
 const Gallery = () => {
   const [selectedCategory, setSelectedCategory] = useState('all')
@@ -9,6 +197,7 @@ const Gallery = () => {
   const [showMore, setShowMore] = useState(false)
   const [isDescriptionExpanded, setIsDescriptionExpanded] = useState(false)
   const [galleryItems, setGalleryItems] = useState([])
+  const [loadedVideos, setLoadedVideos] = useState(new Set())
   const galleryRef = useRef(null)
   
   const [ref, inView] = useInView({
@@ -231,22 +420,26 @@ const Gallery = () => {
                 onClick={() => setSelectedImage(item)}
               >
                 <div className="relative overflow-hidden rounded-2xl bg-gray-100 aspect-[4/3] transition-shadow duration-300 group-hover:shadow-2xl">
-                  {/* 图片 */}
-                  <video
-                src={item.videos[0].src}
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                autoPlay
-                loop
-                muted
-                playsInline
-                style={{
-                  filter: 'brightness(1) contrast(1.1) saturate(1.05)',
-                  imageRendering: 'crisp-edges',
-                  backfaceVisibility: 'hidden',
-                  transform: 'translateZ(0)',
-                  willChange: 'transform'
-                }}
-              />
+                  {/* 懒加载视频 */}
+                  <LazyVideo
+                    src={item.videos[0].src}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    style={{
+                      filter: 'brightness(1) contrast(1.1) saturate(1.05)',
+                      imageRendering: 'crisp-edges',
+                      backfaceVisibility: 'hidden',
+                      transform: 'translateZ(0)',
+                      willChange: 'transform'
+                    }}
+                    priority="normal"
+                     onLoad={() => {
+                       setLoadedVideos(prev => new Set([...prev, item.videos[0].src]))
+                     }}
+                  />
                   
                   {/* 放大图标 */}
                   <div className="absolute top-4 right-4 w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -348,7 +541,7 @@ Natraz              >
                     {/* 第一列：Video Clip */}
                     <div className="flex flex-col items-center justify-center">
                       <div className="aspect-video rounded-lg overflow-hidden w-full">
-                        <video
+                        <LazyVideo
                             ref={(el) => {
                               if (el && selectedImage.videos) {
                                 el.currentTime = 0;
@@ -357,6 +550,7 @@ Natraz              >
                             }}
                             src={selectedImage.videos?.[0]?.src}
                             className="w-full h-full object-cover"
+                            priority="high"
                             autoPlay
                             muted
                             loop
@@ -381,7 +575,7 @@ Natraz              >
                       {/* Depth */}
                       <div className="flex flex-col items-center justify-center px-0">
                         <div className="aspect-video rounded-lg overflow-hidden w-full">
-                          <video
+                          <LazyVideo
                             ref={(el) => {
                               if (el && selectedImage.videos) {
                                 el.currentTime = 0;
@@ -390,6 +584,7 @@ Natraz              >
                             }}
                             src={selectedImage.videos?.[1]?.src}
                             className="w-full h-full object-cover"
+                            priority="high"
                             autoPlay
                             muted
                             loop
@@ -412,7 +607,7 @@ Natraz              >
                       {/* Camera Pose */}
                       <div className="flex flex-col items-center justify-center px-0">
                         <div className="aspect-video rounded-lg overflow-hidden w-full">
-                          <video
+                          <LazyVideo
                             ref={(el) => {
                               if (el && selectedImage.videos) {
                                 el.currentTime = 0;
@@ -421,6 +616,7 @@ Natraz              >
                             }}
                             src={selectedImage.videos?.[2]?.src}
                             className="w-full h-full object-cover"
+                            priority="high"
                             autoPlay
                             muted
                             loop
