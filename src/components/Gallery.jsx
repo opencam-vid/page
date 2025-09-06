@@ -153,31 +153,31 @@ const Gallery = () => {
         'Moderate'
       ]
     },
-    {
-      id: 5,
-      title: 'B1hUyHTeSn4_2',
-      category: 'urban',
-      description: (
-        <div style={{lineHeight: '1.4', textAlign: 'left'}}>
-          <div style={{marginBottom: '8px', paddingLeft: '16px', textIndent: '-16px'}}>• <strong style={{color: ' #0071e3', fontWeight: 'bold'}}>Scene Abstract</strong>: A neon-lit urban intersection in Tokyo at night, bustling with pedestrians under umbrellas, reflecting in puddles beneath vibrant store signs and towering buildings.</div>
-          <div style={{marginBottom: '8px', paddingLeft: '16px', textIndent: '-16px'}}>• <strong style={{color: ' #ff6b35', fontWeight: 'bold'}}>Scene Description</strong>: The scene depicts a bustling urban intersection at night, likely in Japan, with numerous pedestrians crossing the street under umbrellas in the rain. The wet pavement reflects the bright neon lights and advertisements of the surrounding buildings, including a prominent Don Quijote store. The atmosphere is vibrant and energetic, despite the rainy weather. The overall tone is one of urban activity and modern city life, with a sense of constant motion and commercial energy.</div>
-          <div style={{marginBottom: '8px', paddingLeft: '16px', textIndent: '-16px'}}>• <strong style={{color: ' #00bf63', fontWeight: 'bold'}}>Shot Immersion</strong>: The camera glides forward through the rain-slicked streets, its path weaving slightly to the left as it passes under umbrellas and past glowing storefronts. The wet pavement mirrors the electric glow of the city, capturing the rhythm of life in a busy, luminous Japanese crosswalk.</div>
-          <div style={{marginBottom: '8px', paddingLeft: '16px', textIndent: '-16px'}}>• <strong style={{color: ' #6f42c1', fontWeight: 'bold'}}>Camera Motion</strong>: The camera steadily moves forward, gliding through the rain-soaked crosswalk as it translates leftward, maintaining a consistent eye-level perspective. The motion is smooth and sustained, with a clear forward trajectory that captures the flowing pedestrian movement and glowing cityscape.</div>
-        </div>
-      ),
-      videos: [
-        { src: '/SpatialVID/samples/B1hUyHTeSn4_2/clip.mp4', title: 'Video Clip' },
-        { src: '/SpatialVID/samples/B1hUyHTeSn4_2/depth_video.mp4', title: 'Depth' },
-        { src: '/SpatialVID/samples/B1hUyHTeSn4_2/pose_video.mp4', title: 'Camera Pose' }
-      ],
-      tech: [
-        'Urban (Street Scene)',
-        'Bright',
-        'Night',
-        'Rainy',
-        'Crowded'
-      ]
-    },
+    // {
+    //   id: 5,
+    //   title: 'B1hUyHTeSn4_2',
+    //   category: 'urban',
+    //   description: (
+    //     <div style={{lineHeight: '1.4', textAlign: 'left'}}>
+    //       <div style={{marginBottom: '8px', paddingLeft: '16px', textIndent: '-16px'}}>• <strong style={{color: ' #0071e3', fontWeight: 'bold'}}>Scene Abstract</strong>: A neon-lit urban intersection in Tokyo at night, bustling with pedestrians under umbrellas, reflecting in puddles beneath vibrant store signs and towering buildings.</div>
+    //       <div style={{marginBottom: '8px', paddingLeft: '16px', textIndent: '-16px'}}>• <strong style={{color: ' #ff6b35', fontWeight: 'bold'}}>Scene Description</strong>: The scene depicts a bustling urban intersection at night, likely in Japan, with numerous pedestrians crossing the street under umbrellas in the rain. The wet pavement reflects the bright neon lights and advertisements of the surrounding buildings, including a prominent Don Quijote store. The atmosphere is vibrant and energetic, despite the rainy weather. The overall tone is one of urban activity and modern city life, with a sense of constant motion and commercial energy.</div>
+    //       <div style={{marginBottom: '8px', paddingLeft: '16px', textIndent: '-16px'}}>• <strong style={{color: ' #00bf63', fontWeight: 'bold'}}>Shot Immersion</strong>: The camera glides forward through the rain-slicked streets, its path weaving slightly to the left as it passes under umbrellas and past glowing storefronts. The wet pavement mirrors the electric glow of the city, capturing the rhythm of life in a busy, luminous Japanese crosswalk.</div>
+    //       <div style={{marginBottom: '8px', paddingLeft: '16px', textIndent: '-16px'}}>• <strong style={{color: ' #6f42c1', fontWeight: 'bold'}}>Camera Motion</strong>: The camera steadily moves forward, gliding through the rain-soaked crosswalk as it translates leftward, maintaining a consistent eye-level perspective. The motion is smooth and sustained, with a clear forward trajectory that captures the flowing pedestrian movement and glowing cityscape.</div>
+    //     </div>
+    //   ),
+    //   videos: [
+    //     { src: '/SpatialVID/samples/B1hUyHTeSn4_2/clip.mp4', title: 'Video Clip' },
+    //     { src: '/SpatialVID/samples/B1hUyHTeSn4_2/depth_video.mp4', title: 'Depth' },
+    //     { src: '/SpatialVID/samples/B1hUyHTeSn4_2/pose_video.mp4', title: 'Camera Pose' }
+    //   ],
+    //   tech: [
+    //     'Urban (Street Scene)',
+    //     'Bright',
+    //     'Night',
+    //     'Rainy',
+    //     'Crowded'
+    //   ]
+    // },
     {
       id: 6,
       title: 'C94J0Ye8_20_199',
