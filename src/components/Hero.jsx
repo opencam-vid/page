@@ -102,7 +102,7 @@ const Hero = () => {
       <div className="relative z-20 text-center px-6 py-16 w-full max-w-none mx-auto max-w-[80vw]">
         <motion.h1
           ref={titleRef}
-          className="flex items-center justify-center gap-4 text-3xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-8xl 2xl:text-10xl font-bold mb-10 mt-0 leading-tight"
+          className="flex items-center justify-center gap-4 text-3xl sm:text-4xl md:text-6xl lg:text-8xl xl:text-10xl 2xl:text-12xl font-bold mb-10 mt-0 leading-tight"
           initial={{ opacity: 0 }}
         >
           <img 
@@ -115,7 +115,7 @@ const Hero = () => {
         
         <motion.p
           ref={subtitleRef}
-          className="text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl text-black mb-12 max-w-[60vw] mx-auto leading-relaxed"
+          className="text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-4xl text-black mb-12 max-w-[60vw] mx-auto leading-relaxed"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.7 }}
@@ -126,7 +126,7 @@ const Hero = () => {
         
         <motion.div
           ref={heroRef}
-          className="text-xs md:text-sm lg:text-md xl:text-lg 2xl:text-xl text-black mb-16 max-w-[80vw] mx-auto"
+          className="text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-black mb-16 max-w-[80vw] mx-auto"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1 }}
@@ -137,11 +137,11 @@ const Hero = () => {
           <div className="mb-2">
              Yanxi Zhou<sup>1</sup>, Xiaoxiao Long<sup>1</sup>, Hao Zhu<sup>1</sup>, Zhaoxiang Zhang<sup>2</sup>, Xun Cao<sup>1</sup>, <a href="https://yoyo000.github.io/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">Yao Yao</a><sup>1 †</sup>
           </div>
-          <div className="mt-6 text-xs md:text-sm lg:text-md xl:text-lg 2xl:text-xl leading-relaxed">
+          <div className="mt-5 text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl leading-relaxed">
             <sup>1</sup>Nanjing University&nbsp;&nbsp;&nbsp;&nbsp;<sup>2</sup>Institute of Automation, Chinese Academy of Science
           </div>
-          <div className="mt-2 text-xs md:text-sm lg:text-md xl:text-lg 2xl:text-xl leading-relaxed">
-            <sup>†</sup>Equal contribution&nbsp;&nbsp;&nbsp;&nbsp;<sup>*</sup>Corresponding author
+          <div className="mt-1 text-2xs md:text-sm lg:text-md xl:text-lg 2xl:text-xl leading-relaxed text-gray-500">
+            <sup>*</sup>Equal contribution&nbsp;&nbsp;&nbsp;&nbsp;<sup>†</sup>Corresponding author
           </div>
         </motion.div>
         
@@ -155,7 +155,7 @@ const Hero = () => {
               whileHover={{ scale: 1.05, boxShadow: '0 20px 40px rgba(0, 113, 227, 0.3)' }}
               whileTap={{ scale: 0.95 }}
               onClick={scrollToNext}
-              className="apple-button text-md md:text-md lg:text-lg xl:text-xl 2xl:text-3xl px-8 py-4 bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-cyan-550 hover:to-teal-550 text-gray-700"
+              className="apple-button text-xs md:text-sm lg:text-md xl:text-lg 2xl:text-2xl px-8 py-4 bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-cyan-550 hover:to-teal-550 text-gray-700"
             >
               Explore Project
             </motion.button>
@@ -169,7 +169,7 @@ const Hero = () => {
                  }}
                  whileHover={{ scale: 1.05 }}
                  whileTap={{ scale: 0.95 }}
-                 className="inline-block text-md md:text-md lg:text-md xl:text-xl 2xl:text-3xl px-6 py-3 text-gray-700 rounded-full font-medium transition-all duration-300 hover:shadow-lg"
+                 className="inline-block text-xs md:text-sm lg:text-md xl:text-lg 2xl:text-2xl px-6 py-3 text-gray-700 rounded-full font-medium transition-all duration-300 hover:shadow-lg"
                  style={{
                    backgroundColor: '#d3e8fd',
                    borderColor: '#d3e8fd',
@@ -189,14 +189,14 @@ const Hero = () => {
           </div>
           
           {/* 外部链接按钮 */}
-           <div className="flex flex-wrap gap-2 lg:gap-3 xl:gap-4 2xl:gap-6 justify-center items-center">
+           <div className="flex flex-wrap gap-1 lg:gap-2 xl:gap-3 2xl:gap-5 justify-center items-center">
              <motion.a
                href="https://github.com/NJU-3DV/spatialVID"
                target="_blank"
                rel="noopener noreferrer"
                whileHover={{ scale: 1.05, y: -2 }}
                whileTap={{ scale: 0.95 }}
-               className="flex items-center gap-2 px-4 py-2 text-sm md:text-sm lg:text-md xl:text-lg 2xl:text-2xl text-gray-700 rounded-lg font-medium transition-all duration-300 text-base hover:shadow-md"
+               className="flex items-center gap-2 px-4 py-2 text-xs md:text-sm lg:text-md xl:text-lg 2xl:text-2xl text-gray-700 rounded-lg font-medium transition-all duration-300 text-base hover:shadow-md"
                style={{
                  backgroundColor: '#d3e8fd',
                  borderColor: '#d3e8fd',
@@ -221,7 +221,7 @@ const Hero = () => {
                rel="noopener noreferrer"
                whileHover={{ scale: 1.05, y: -2 }}
                whileTap={{ scale: 0.95 }}
-               className="flex items-center gap-2 px-4 py-2 text-sm md:text-sm lg:text-md xl:text-lg 2xl:text-2xl text-gray-700 rounded-lg font-medium transition-all duration-300 text-base hover:shadow-md"
+               className="flex items-center gap-2 px-4 py-2 text-xs md:text-sm lg:text-md xl:text-lg 2xl:text-2xl text-gray-700 rounded-lg font-medium transition-all duration-300 text-base hover:shadow-md"
                style={{
                  backgroundColor: '#d3e8fd',
                  borderColor: '#d3e8fd',
@@ -246,7 +246,7 @@ const Hero = () => {
                rel="noopener noreferrer"
                whileHover={{ scale: 1.05, y: -2 }}
                whileTap={{ scale: 0.95 }}
-               className="flex items-center gap-2 px-4 py-2 text-sm md:text-sm lg:text-md xl:text-lg 2xl:text-2xl text-gray-700 rounded-lg font-medium transition-all duration-300 text-base hover:shadow-md"
+               className="flex items-center gap-2 px-4 py-2 text-xs md:text-sm lg:text-md xl:text-lg 2xl:text-2xl text-gray-700 rounded-lg font-medium transition-all duration-300 text-base hover:shadow-md"
                style={{
                  backgroundColor: '#d3e8fd',
                  borderColor: '#d3e8fd',

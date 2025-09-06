@@ -1156,12 +1156,16 @@ Natraz              >
 
                 {/* 下半部分：描述和标签 */}
                 <motion.div 
-                  className="p-6 bg-white/95 flex flex-col border-t border-gray-200"
+                  className="p-6 bg-white flex flex-col border-t border-gray-200"
                   animate={{
                     height: isDescriptionExpanded ? '75%' : '40%'
                   }}
                   transition={{ duration: 0.3, ease: 'easeInOut' }}
-                  style={{ height: isDescriptionExpanded ? '75%' : '40%' }}
+                  style={{ 
+                    height: isDescriptionExpanded ? '75%' : '40%',
+                    zIndex: 10,
+                    backgroundColor: '#ffffff'
+                  }}
                 >
                   {/* 展开/收起按钮 */}
                   <div className="flex justify-between items-center mb-4">
