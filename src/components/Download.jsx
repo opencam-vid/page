@@ -37,12 +37,12 @@ const Download = () => {
     {
       name: 'SpatialVID',
       description: '10.5M samples / 37.0 khrs duration / ~8.0 TB',
-      downloadUrl: '#'
+      downloadUrl: 'https://huggingface.co/datasets/SpatialVID/SpatialVID'
     },
     {
       name: 'SpatialVID-HQ',
       description: '10.5M samples / 37.0 khrs duration / ~8.0 TB',
-      downloadUrl: '#'
+      downloadUrl: 'https://huggingface.co/datasets/SpatialVID/SpatialVID-HQ'
     },
     {
       name: 'SpatialVID-Raw',
@@ -52,10 +52,13 @@ const Download = () => {
   ]
 
   const handleDownload = (url, name) => {
-    // 这里可以添加实际的下载逻辑
-    console.log(`Downloading ${name} from ${url}`)
-    // 临时提示，实际使用时可以替换为真实的下载链接
-    alert(`${name} 下载功能即将开放，敬请期待！`)
+    if (url === '#') {
+      // 当链接为#时，显示提示信息
+      alert(`${name} is coming soon, stay tuned!`)
+    } else {
+      // 当链接不为#时，跳转到原链接
+      window.open(url, '_blank')
+    }
   }
 
   return (

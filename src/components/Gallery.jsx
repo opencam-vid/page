@@ -106,7 +106,7 @@ const Gallery = () => {
                   <div style={{marginBottom: '8px', paddingLeft: '16px', textIndent: '-16px'}}>• <strong style={{color: ' #ff6b35', fontWeight: 'bold'}}>Scene Description</strong>: {data.SceneDesc}</div>
                 )}
                 {data.ShotImmersion && data.ShotImmersion !== 'unknown' && (
-                  <div style={{marginBottom: '8px', paddingLeft: '16px', textIndent: '-16px'}}>• <strong style={{color: ' #00bf63', fontWeight: 'bold'}}>Shot Immersion</strong>: {data.ShotImmersion}</div>
+                  <div style={{marginBottom: '8px', paddingLeft: '16px', textIndent: '-16px'}}>• <strong style={{color: ' #00bf63', fontWeight: 'bold'}}>Immersive Shot Summary</strong>: {data.ShotImmersion}</div>
                 )}
                 {data.OptCamMotion && data.OptCamMotion !== 'unknown' && (
                   <div style={{marginBottom: '8px', paddingLeft: '16px', textIndent: '-16px'}}>• <strong style={{color: ' #6f42c1', fontWeight: 'bold'}}>Camera Description</strong>: {data.OptCamMotion}</div>
@@ -468,14 +468,14 @@ Natraz              >
                           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                           </svg>
-                          Collapse
+                          Brief Captions
                         </>
                       ) : (
                         <>
                           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
                           </svg>
-                          Expand
+                          Structured Captions
                         </>
                       )}
                     </button>

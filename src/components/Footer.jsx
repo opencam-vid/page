@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear()
+  // const currentYear = new Date().getFullYear()
 
   return (
     <footer className="bg-gradient-to-r from-blue-50 to-indigo-50 border-t border-blue-100">
@@ -39,8 +39,8 @@ const Footer = () => {
             viewport={{ once: true }}
             className="text-center"
           >
-            <p className="text-gray-500 text-sm 2xl:text-base leading-relaxed max-w-2xl">
-              © {currentYear} NJU 3DV Lab. All research data and materials are licensed under Creative Commons Attribution 4.0 International License.
+            <p className="text-gray-500 text-sm 2xl:text-base leading-relaxed max-w-[55vw]">
+              SpatialVID is released under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC-BY-NC-SA-4.0). Users must attribute the original source, use the resource only for non-commercial purposes, and release any modified/derived works under the same license.
             </p>
           </motion.div>
         </div>
