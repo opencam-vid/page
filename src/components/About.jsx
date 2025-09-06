@@ -82,7 +82,7 @@ const About = () => {
                   className="text-center"
                   whileHover={{ scale: 1.05 }}
                 >
-                  <div className="text-sm sm:text-md md:text-2xl lg:text-4xl xl:text-5xl 2xl:text-7xl font-bold gradient-text mb-2">
+                  <div className="text-sm sm:text-md md:text-2xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold gradient-text mb-2">
                     {stat.number}
                   </div>
                   <div className="text-2xs md:text-xs lg:text-sm xl:text-md 2xl:text-xl text-gray-400 font-medium text-sm">
